@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     // 服务器ip地址
 //    tcpSocket -> connectToHost(QHostAddress("82.157.207.240"),8899);
     // 本地测试
-     tcpSocket -> connectToHost(QHostAddress("192.168.59.127"),8899);
+     tcpSocket -> connectToHost(QHostAddress("127.0.0.1"),8899);
 
     istransporting=false;//
 
