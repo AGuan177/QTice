@@ -42,7 +42,7 @@ public:
     {
         if (add_friend->objectName().isEmpty())
             add_friend->setObjectName(QStringLiteral("add_friend"));
-        add_friend->resize(499, 345);
+        add_friend->resize(501, 345);
         add_friend->setStyleSheet(QLatin1String("QLineEdit{\n"
 "	border:none;\n"
 "	background:rgb(235,235,235);\n"
@@ -71,7 +71,7 @@ public:
 "font: 9pt \"Eras Bold ITC\";"));
         gridLayoutWidget = new QWidget(add_friend);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(20, 160, 451, 125));
+        gridLayoutWidget->setGeometry(QRect(20, 160, 451, 131));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -81,7 +81,7 @@ public:
         lineEditGroupId->setSizePolicy(sizePolicy);
         lineEditGroupId->setMinimumSize(QSize(300, 40));
         lineEditGroupId->setStyleSheet(QStringLiteral("border-bottom-color:rgb(245,245,245)"));
-        lineEditGroupId->setInputMethodHints(Qt::ImhNone);
+        lineEditGroupId->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData);
         lineEditGroupId->setEchoMode(QLineEdit::Password);
 
         gridLayout->addWidget(lineEditGroupId, 1, 0, 1, 1);

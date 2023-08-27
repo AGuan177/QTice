@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>499</width>
+    <width>501</width>
     <height>345</height>
    </rect>
   </property>
@@ -97,7 +97,7 @@ p, li { white-space: pre-wrap; }
      <x>20</x>
      <y>160</y>
      <width>451</width>
-     <height>125</height>
+     <height>131</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -119,7 +119,7 @@ p, li { white-space: pre-wrap; }
        <string notr="true">border-bottom-color:rgb(245,245,245)</string>
       </property>
       <property name="inputMethodHints">
-       <set>Qt::ImhNone</set>
+       <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
       </property>
       <property name="text">
        <string/>
