@@ -15,10 +15,10 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -41,8 +41,8 @@ public:
     QLineEdit *lineEditPassword_2;
     QSpacerItem *horizontalSpacer_4;
     QWidget *widget;
-    QTextEdit *textEdit;
     QPushButton *logo;
+    QLabel *label;
     QWidget *widget_2;
 
     void setupUi(QWidget *Regster_Windows)
@@ -90,7 +90,7 @@ public:
 
         horizontalLayoutWidget_2 = new QWidget(Regster_Windows);
         horizontalLayoutWidget_2->setObjectName(QStringLiteral("horizontalLayoutWidget_2"));
-        horizontalLayoutWidget_2->setGeometry(QRect(0, 150, 501, 151));
+        horizontalLayoutWidget_2->setGeometry(QRect(0, 150, 501, 223));
         horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
@@ -145,21 +145,18 @@ public:
         widget->setSizePolicy(sizePolicy);
         widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
 ""));
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(90, 20, 151, 51));
-        textEdit->setStyleSheet(QLatin1String("border:none;\n"
-"font: 9pt \"Eras Bold ITC\";"));
         logo = new QPushButton(widget);
         logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(20, 20, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
+        logo->setGeometry(QRect(30, 20, 81, 71));
+        label = new QLabel(widget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(190, 30, 231, 61));
+        label->setStyleSheet(QLatin1String("\n"
+"font: 75 italic 36pt \"Adobe Arabic\";"));
         widget_2 = new QWidget(Regster_Windows);
         widget_2->setObjectName(QStringLiteral("widget_2"));
         widget_2->setGeometry(QRect(-1, 110, 501, 301));
+        widget->raise();
         widget_2->raise();
         horizontalLayoutWidget->raise();
         horizontalLayoutWidget_2->raise();
@@ -179,12 +176,8 @@ public:
         lineEditPassword->setPlaceholderText(QApplication::translate("Regster_Windows", "\345\257\206\347\240\201", Q_NULLPTR));
         lineEditPassword_2->setText(QString());
         lineEditPassword_2->setPlaceholderText(QApplication::translate("Regster_Windows", "\347\241\256\350\256\244\345\257\206\347\240\201", Q_NULLPTR));
-        textEdit->setHtml(QApplication::translate("Regster_Windows", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Eras Bold ITC'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">YourTalk</span></p></body></html>", Q_NULLPTR));
         logo->setText(QString());
+        label->setText(QApplication::translate("Regster_Windows", "Icebreaker", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -33,7 +33,7 @@ Cell_Main::Cell_Main(QTcpSocket *tcpsocket) :
 
     this->setWindowFlags(Qt::FramelessWindowHint);
 
-    chat_name = QString("Your Talk!");
+    chat_name = QString("IceBreaker");
     ui->name->setText(chat_name);
 
     win_color = QString("black");

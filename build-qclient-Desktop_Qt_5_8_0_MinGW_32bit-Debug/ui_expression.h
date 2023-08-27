@@ -15,8 +15,8 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -34,7 +34,7 @@ public:
     QPushButton *pushButton_3;
     QWidget *widget;
     QPushButton *logo;
-    QTextEdit *textEdit;
+    QLabel *label;
 
     void setupUi(QWidget *expression)
     {
@@ -118,11 +118,10 @@ public:
         logo->setSizePolicy(sizePolicy);
         logo->setMinimumSize(QSize(50, 50));
         logo->setMaximumSize(QSize(50, 50));
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(90, 10, 151, 51));
-        textEdit->setStyleSheet(QLatin1String("border:none;\n"
-"font: 9pt \"Eras Bold ITC\";"));
+        label = new QLabel(widget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(100, 10, 221, 51));
+        label->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
 
         retranslateUi(expression);
 
@@ -139,11 +138,7 @@ public:
         pushButton_5->setText(QString());
         pushButton_3->setText(QString());
         logo->setText(QString());
-        textEdit->setHtml(QApplication::translate("expression", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Eras Bold ITC'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">YourTalk</span></p></body></html>", Q_NULLPTR));
+        label->setText(QApplication::translate("expression", "IceBreaker", Q_NULLPTR));
     } // retranslateUi
 
 };

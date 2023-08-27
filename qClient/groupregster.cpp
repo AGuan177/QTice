@@ -1,5 +1,9 @@
 #include "groupregster.h"
 #include "ui_groupregster.h"
+#include <QToolButton>
+#include <QHBoxLayout>
+#include <QPixmap>
+#include <QIcon>
 
 GroupRegster::GroupRegster(QTcpSocket * tcpsocket):
     ui(new Ui::GroupRegster),tcpSocket(tcpsocket)
@@ -22,7 +26,7 @@ void GroupRegster::on_pushButtonCreateGroup_clicked()
     qDebug()<<id<<"申请建立群"<<groupname;
     tcpSocket->write(str.toUtf8().data());
     ui->logo->setSizeIncrement(50,50);
-    ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
+    ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.png"));
     ui->logo->setIconSize(QSize(100,100));
 }
 void GroupRegster::showDialog(bool ifsuccess)

@@ -15,10 +15,10 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -28,11 +28,11 @@ class Ui_Signin_Windows
 {
 public:
     QWidget *widget;
-    QTextEdit *textEdit;
-    QPushButton *logo;
     QWidget *widget_3;
     QWidget *widget_4;
     QWidget *widget_5;
+    QPushButton *logo;
+    QLabel *label;
     QWidget *widget_2;
     QPushButton *pushButtonRegster;
     QWidget *horizontalLayoutWidget;
@@ -73,27 +73,6 @@ public:
         widget->setSizePolicy(sizePolicy);
         widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
 ""));
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(340, 50, 281, 81));
-        QFont font;
-        font.setFamily(QStringLiteral("Eras Bold ITC"));
-        font.setPointSize(9);
-        font.setBold(false);
-        font.setItalic(false);
-        font.setWeight(50);
-        textEdit->setFont(font);
-        textEdit->setStyleSheet(QLatin1String("border:none;\n"
-"font: 9pt \"Eras Bold ITC\";"));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(210, 50, 70, 70));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(70, 70));
-        logo->setMouseTracking(false);
-        logo->setIconSize(QSize(20, 20));
         widget_3 = new QWidget(widget);
         widget_3->setObjectName(QStringLiteral("widget_3"));
         widget_3->setGeometry(QRect(0, 0, 120, 80));
@@ -103,6 +82,13 @@ public:
         widget_5 = new QWidget(widget_4);
         widget_5->setObjectName(QStringLiteral("widget_5"));
         widget_5->setGeometry(QRect(0, 0, 741, 161));
+        logo = new QPushButton(widget);
+        logo->setObjectName(QStringLiteral("logo"));
+        logo->setGeometry(QRect(150, 40, 101, 81));
+        label = new QLabel(widget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(360, 50, 261, 71));
+        label->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
         widget_2 = new QWidget(Signin_Windows);
         widget_2->setObjectName(QStringLiteral("widget_2"));
         widget_2->setGeometry(QRect(-20, 120, 761, 471));
@@ -111,10 +97,10 @@ public:
         pushButtonRegster = new QPushButton(widget_2);
         pushButtonRegster->setObjectName(QStringLiteral("pushButtonRegster"));
         pushButtonRegster->setGeometry(QRect(30, 410, 91, 31));
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("\347\255\211\347\272\277"));
-        font1.setUnderline(false);
-        pushButtonRegster->setFont(font1);
+        QFont font;
+        font.setFamily(QString::fromUtf8("\347\255\211\347\272\277"));
+        font.setUnderline(false);
+        pushButtonRegster->setFont(font);
         pushButtonRegster->setStyleSheet(QLatin1String("border:none;\n"
 "color: rgb(82, 82, 82);\n"
 "background:rgb(245,245,245);"));
@@ -133,10 +119,10 @@ public:
         sizePolicy.setHeightForWidth(pushButtonLogin->sizePolicy().hasHeightForWidth());
         pushButtonLogin->setSizePolicy(sizePolicy);
         pushButtonLogin->setMinimumSize(QSize(150, 50));
-        QFont font2;
-        font2.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font2.setPointSize(12);
-        pushButtonLogin->setFont(font2);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font1.setPointSize(12);
+        pushButtonLogin->setFont(font1);
         pushButtonLogin->setStyleSheet(QLatin1String("background-color: rgb(46,46,46);\n"
 "color: rgb(255, 255, 255);\n"
 "border-radiux: 505px"));
@@ -197,12 +183,8 @@ public:
     void retranslateUi(QWidget *Signin_Windows)
     {
         Signin_Windows->setWindowTitle(QApplication::translate("Signin_Windows", "Form", Q_NULLPTR));
-        textEdit->setHtml(QApplication::translate("Signin_Windows", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Eras Bold ITC'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:28pt; color:#ffffff;\">YourTalk</span></p></body></html>", Q_NULLPTR));
         logo->setText(QString());
+        label->setText(QApplication::translate("Signin_Windows", "IceBreaker", Q_NULLPTR));
         pushButtonRegster->setText(QApplication::translate("Signin_Windows", "\346\263\250\345\206\214\350\264\246\345\217\267", Q_NULLPTR));
         pushButtonLogin->setText(QApplication::translate("Signin_Windows", "\347\231\273 \345\275\225", Q_NULLPTR));
         lineEditUsername->setInputMask(QString());

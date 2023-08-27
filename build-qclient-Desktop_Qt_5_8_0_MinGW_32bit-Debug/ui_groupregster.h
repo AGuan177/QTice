@@ -17,7 +17,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,7 +30,8 @@ public:
     QPushButton *pushButtonCreateGroup;
     QWidget *widget;
     QPushButton *logo;
-    QTextEdit *textEdit;
+    QToolButton *toolButton;
+    QLabel *label_2;
 
     void setupUi(QWidget *GroupRegster)
     {
@@ -68,16 +69,14 @@ public:
 ""));
         logo = new QPushButton(widget);
         logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(30, 20, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(100, 20, 151, 51));
-        textEdit->setStyleSheet(QLatin1String("border:none;\n"
-"font: 9pt \"Eras Bold ITC\";"));
+        logo->setGeometry(QRect(20, 10, 61, 61));
+        toolButton = new QToolButton(widget);
+        toolButton->setObjectName(QStringLiteral("toolButton"));
+        toolButton->setGeometry(QRect(30, 20, 47, 21));
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(170, 20, 241, 51));
+        label_2->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
 
         retranslateUi(GroupRegster);
 
@@ -86,16 +85,13 @@ public:
 
     void retranslateUi(QWidget *GroupRegster)
     {
-        GroupRegster->setWindowTitle(QApplication::translate("GroupRegster", "Form", Q_NULLPTR));
+        GroupRegster->setWindowTitle(QApplication::translate("GroupRegster", "GroupRegster", Q_NULLPTR));
         label->setText(QString());
         lineEditGroupName->setPlaceholderText(QApplication::translate("GroupRegster", "\347\276\244\345\220\215", Q_NULLPTR));
         pushButtonCreateGroup->setText(QApplication::translate("GroupRegster", "\345\210\233\345\273\272", Q_NULLPTR));
         logo->setText(QString());
-        textEdit->setHtml(QApplication::translate("GroupRegster", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Eras Bold ITC'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">YourTalk</span></p></body></html>", Q_NULLPTR));
+        toolButton->setText(QApplication::translate("GroupRegster", "...", Q_NULLPTR));
+        label_2->setText(QApplication::translate("GroupRegster", "IceBreaker", Q_NULLPTR));
     } // retranslateUi
 
 };
