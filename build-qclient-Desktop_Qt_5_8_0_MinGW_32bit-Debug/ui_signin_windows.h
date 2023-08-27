@@ -87,7 +87,7 @@ public:
         logo->setGeometry(QRect(150, 40, 101, 81));
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(360, 50, 261, 71));
+        label->setGeometry(QRect(300, 40, 271, 81));
         label->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
         widget_2 = new QWidget(Signin_Windows);
         widget_2->setObjectName(QStringLiteral("widget_2"));

@@ -90,10 +90,10 @@ QLineEdit{
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>50</y>
-      <width>261</width>
-      <height>71</height>
+      <x>300</x>
+      <y>40</y>
+      <width>271</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
