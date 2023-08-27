@@ -47,7 +47,7 @@ QLineEdit{
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>340</x>
       <y>50</y>
       <width>281</width>
       <height>81</height>

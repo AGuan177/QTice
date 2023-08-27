@@ -75,7 +75,7 @@ public:
 ""));
         textEdit = new QTextEdit(widget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(300, 50, 281, 81));
+        textEdit->setGeometry(QRect(340, 50, 281, 81));
         QFont font;
         font.setFamily(QStringLiteral("Eras Bold ITC"));
         font.setPointSize(9);

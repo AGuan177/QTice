@@ -13,8 +13,8 @@ Friend_Windows::Friend_Windows(QTcpSocket * tcpsocket) :
                                         "background-color:rgb(227,224,223)");
     ui->listWidgetGroup->setStyleSheet("border:none;"
                                        "background-color:rgb(227,224,223)");
-    ui->listWidgetNewNote->setStyleSheet("border:none;"
-                                       "background-color:rgb(227,224,223)");
+    //ui->listWidgetNewNote->setStyleSheet("border:none;"
+                                       //"background-color:rgb(227,224,223)");
     ui->tabWidget->setStyleSheet("border:none");
     ui->labelID->setStyleSheet("background:rgba(225,225,225,0);"
                                "font: 75 12pt \"Agency FB\";");
@@ -40,8 +40,8 @@ void Friend_Windows::ChangeColor(QString color)
                                             "background-color:rgb(202,200,242)");
         ui->listWidgetGroup->setStyleSheet("border:none;"
                                            "background-color:rgb(202,200,242)");
-        ui->listWidgetNewNote->setStyleSheet("border:none;"
-                                           "background-color:rgb(202,200,242)");
+        //ui->listWidgetNewNote->setStyleSheet("border:none;"
+                                           //"background-color:rgb(202,200,242)");
         ui->tabWidget->setStyleSheet("border:none");
         ui->labelID->setStyleSheet("background:rgba(225,225,225,0);"
                                    "font: 75 12pt \"Agency FB\";");
@@ -63,8 +63,8 @@ void Friend_Windows::ChangeColor(QString color)
                                             "background-color:rgb(244,198,205)");
         ui->listWidgetGroup->setStyleSheet("border:none;"
                                            "background-color:rgb(244,198,205)");
-        ui->listWidgetNewNote->setStyleSheet("border:none;"
-                                           "background-color:rgb(244,198,205)");
+        //ui->listWidgetNewNote->setStyleSheet("border:none;"
+                                           //"background-color:rgb(244,198,205)");
         ui->tabWidget->setStyleSheet("border:none");
         ui->labelID->setStyleSheet("background:rgba(225,225,225,0);"
                                    "font: 75 12pt \"Agency FB\";");
@@ -86,8 +86,8 @@ void Friend_Windows::ChangeColor(QString color)
                                             "background-color:rgb(244,220,123)");
         ui->listWidgetGroup->setStyleSheet("border:none;"
                                            "background-color:rgb(244,220,123)");
-        ui->listWidgetNewNote->setStyleSheet("border:none;"
-                                           "background-color:rgb(244,220,123)");
+        //ui->listWidgetNewNote->setStyleSheet("border:none;"
+                                          // "background-color:rgb(244,220,123)");
         ui->tabWidget->setStyleSheet("border:none");
         ui->labelID->setStyleSheet("background:rgba(225,225,225,0);"
                                    "font: 75 12pt \"Agency FB\";");
@@ -109,8 +109,8 @@ void Friend_Windows::ChangeColor(QString color)
                                             "background-color:rgb(227,224,223)");
         ui->listWidgetGroup->setStyleSheet("border:none;"
                                            "background-color:rgb(227,224,223)");
-        ui->listWidgetNewNote->setStyleSheet("border:none;"
-                                           "background-color:rgb(227,224,223)");
+        //ui->listWidgetNewNote->setStyleSheet("border:none;"
+                                          // "background-color:rgb(227,224,223)");
         ui->tabWidget->setStyleSheet("border:none");
         ui->labelID->setStyleSheet("background:rgba(225,225,225,0);"
                                    "font: 75 12pt \"Agency FB\";");
@@ -337,14 +337,14 @@ void Friend_Windows::addNoneReceiveMessage(QString senderid)//申请者id
 {
     QListWidgetItem * item=new QListWidgetItem;
     item->setText("#"+senderid+"#向您发来了好友申请");
-    ui->listWidgetNewNote->addItem(item);
+    //ui->listWidgetNewNote->addItem(item);
 
 }
 void Friend_Windows::addNone_Message(QString senderid)
 {
     QListWidgetItem * item=new QListWidgetItem;
     item->setText("!"+senderid+"!给您发来了新消息");
-    ui->listWidgetNewNote->addItem(item);
+    //ui->listWidgetNewNote->addItem(item);
 }
 
 void Friend_Windows::on_listWidgetNewNote_itemDoubleClicked(QListWidgetItem *item)
@@ -384,7 +384,7 @@ void Friend_Windows::on_listWidgetNewNote_itemDoubleClicked(QListWidgetItem *ite
     }
 
 
-    ui->listWidgetNewNote->removeItemWidget(item);
+    //ui->listWidgetNewNote->removeItemWidget(item);
     delete item;
 
 
