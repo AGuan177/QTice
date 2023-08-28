@@ -11,12 +11,16 @@ expression::expression(QTcpSocket * tcpsocket) :
     ui->pushButton_4->setIcon(QIcon(":/new/prefix1/img/exp4.png"));
     ui->pushButton_5->setIcon(QIcon(":/new/prefix1/img/exp5.png"));
     ui->pushButton_6->setIcon(QIcon(":/new/prefix1/img/exp6.png"));
+    ui->pushButton_7->setIcon(QIcon(":/new/prefix1/img/exp7.png"));
+    ui->pushButton_8->setIcon(QIcon(":/new/prefix1/img/exp8.png"));
     ui->pushButton_1->setIconSize(QSize(80, 80));
     ui->pushButton_2->setIconSize(QSize(80, 80));
     ui->pushButton_3->setIconSize(QSize(80, 80));
     ui->pushButton_4->setIconSize(QSize(80, 80));
     ui->pushButton_5->setIconSize(QSize(80, 80));
     ui->pushButton_6->setIconSize(QSize(80, 80));
+    ui->pushButton_7->setIconSize(QSize(80, 80));
+    ui->pushButton_8->setIconSize(QSize(80, 80));
     //ui->logo->setSizeIncrement(50,50);
     //ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
     //ui->logo->setIconSize(QSize(100,100));
@@ -64,5 +68,15 @@ void expression::on_pushButton_6_clicked()
     emit send_emoj_1(message);
 }
 
+void expression::on_pushButton_7_clicked()
+{
+    QString message="exp7.png";
+    emit send_emoj_1(message);
+}
 
+void expression::on_pushButton_8_clicked()
+{
+    QString message="exp8.png";
+    emit send_emoj_1(message);
+}
 
