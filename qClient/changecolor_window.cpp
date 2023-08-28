@@ -18,25 +18,25 @@ ChangeColor_Window::~ChangeColor_Window()
 
 void ChangeColor_Window::on_blue_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(190,173,250);"
-                              "border:none;");
+   //ui->widget->setStyleSheet("background-color:rgb(190,173,250);"
+                              //"border:none;");
     emit sig_color(QString("blue"));
 }
 void ChangeColor_Window::on_black_clicked()
 {
-    ui->widget->setStyleSheet("background-color: rgb(0, 170, 255);"
-                              "border:none;");
+    //ui->widget->setStyleSheet("background-color: rgb(0, 170, 255);"
+                             // "border:none;");
     emit sig_color(QString("black"));
 }
 void ChangeColor_Window::on_yellow_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(248,157,3);"
-                              "border:none;");
+    //ui->widget->setStyleSheet("background-color:rgb(248,157,3);"
+                              //"border:none;");
     emit sig_color(QString("yellow"));
 }
 void ChangeColor_Window::on_red_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(250, 152, 132);"
-                              "border:none;");
+    //ui->widget->setStyleSheet("background-color:rgb(250, 152, 132);"
+                              //"border:none;");
     emit sig_color(QString("red"));
 }
