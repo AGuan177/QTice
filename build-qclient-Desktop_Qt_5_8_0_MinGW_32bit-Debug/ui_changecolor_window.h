@@ -27,7 +27,6 @@ class Ui_ChangeColor_Window
 {
 public:
     QWidget *widget;
-    QPushButton *logo;
     QLabel *label_6;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
@@ -62,14 +61,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QStringLiteral("background-color:rgb(181, 238, 105)"));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(20, 20, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
+        widget->setStyleSheet(QStringLiteral("background-color:rgb(0, 170, 255)"));
         label_6 = new QLabel(widget);
         label_6->setObjectName(QStringLiteral("label_6"));
         label_6->setGeometry(QRect(110, 20, 221, 71));
@@ -173,7 +165,6 @@ public:
     void retranslateUi(QDialog *ChangeColor_Window)
     {
         ChangeColor_Window->setWindowTitle(QApplication::translate("ChangeColor_Window", "Dialog", Q_NULLPTR));
-        logo->setText(QString());
         label_6->setText(QApplication::translate("ChangeColor_Window", "IceBreaker", Q_NULLPTR));
         label_2->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\350\224\232\350\223\235</p><p align=\"center\">\344\271\213\346\265\267</p></body></html>", Q_NULLPTR));
         label_3->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\347\203\255\347\203\210</p><p align=\"center\">\344\271\213\345\244\217</p></body></html>", Q_NULLPTR));

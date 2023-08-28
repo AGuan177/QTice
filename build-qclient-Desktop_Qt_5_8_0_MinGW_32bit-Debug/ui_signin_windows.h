@@ -31,8 +31,8 @@ public:
     QWidget *widget_3;
     QWidget *widget_4;
     QWidget *widget_5;
-    QPushButton *logo;
     QLabel *label;
+    QPushButton *logo;
     QWidget *widget_2;
     QPushButton *pushButtonRegster;
     QWidget *horizontalLayoutWidget;
@@ -71,8 +71,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
-""));
+        widget->setStyleSheet(QStringLiteral("background-color: rgb(0, 170, 255);"));
         widget_3 = new QWidget(widget);
         widget_3->setObjectName(QStringLiteral("widget_3"));
         widget_3->setGeometry(QRect(0, 0, 120, 80));
@@ -82,13 +81,13 @@ public:
         widget_5 = new QWidget(widget_4);
         widget_5->setObjectName(QStringLiteral("widget_5"));
         widget_5->setGeometry(QRect(0, 0, 741, 161));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(150, 40, 101, 81));
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(300, 40, 271, 81));
+        label->setGeometry(QRect(280, 40, 221, 91));
         label->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
+        logo = new QPushButton(widget);
+        logo->setObjectName(QStringLiteral("logo"));
+        logo->setGeometry(QRect(80, 40, 111, 81));
         widget_2 = new QWidget(Signin_Windows);
         widget_2->setObjectName(QStringLiteral("widget_2"));
         widget_2->setGeometry(QRect(-20, 120, 761, 471));
@@ -183,8 +182,8 @@ public:
     void retranslateUi(QWidget *Signin_Windows)
     {
         Signin_Windows->setWindowTitle(QApplication::translate("Signin_Windows", "Form", Q_NULLPTR));
-        logo->setText(QString());
         label->setText(QApplication::translate("Signin_Windows", "IceBreaker", Q_NULLPTR));
+        logo->setText(QString());
         pushButtonRegster->setText(QApplication::translate("Signin_Windows", "\346\263\250\345\206\214\350\264\246\345\217\267", Q_NULLPTR));
         pushButtonLogin->setText(QApplication::translate("Signin_Windows", "\347\231\273 \345\275\225", Q_NULLPTR));
         lineEditUsername->setInputMask(QString());

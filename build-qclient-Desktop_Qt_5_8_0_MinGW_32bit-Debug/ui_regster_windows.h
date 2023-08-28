@@ -97,7 +97,7 @@ public:
 ""));
         logo = new QPushButton(widget);
         logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(30, 20, 81, 71));
+        logo->setGeometry(QRect(40, 20, 81, 71));
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(190, 30, 231, 61));
@@ -156,8 +156,6 @@ public:
 
         horizontalLayout_2->addItem(horizontalSpacer_4);
 
-        widget->raise();
-        horizontalLayoutWidget_2->raise();
         widget_2->raise();
         horizontalLayoutWidget->raise();
         widget->raise();

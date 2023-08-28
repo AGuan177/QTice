@@ -6,9 +6,9 @@ ChangeColor_Window::ChangeColor_Window(QWidget *parent) :
     ui(new Ui::ChangeColor_Window)
 {
     ui->setupUi(this);
-    ui->logo->setSizeIncrement(50,50);
-    ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
-    ui->logo->setIconSize(QSize(100,100));
+    //ui->logo->setSizeIncrement(50,50);
+    //ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
+    //ui->logo->setIconSize(QSize(100,100));
 }
 
 ChangeColor_Window::~ChangeColor_Window()
@@ -24,7 +24,7 @@ void ChangeColor_Window::on_blue_clicked()
 }
 void ChangeColor_Window::on_black_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(7,193,96);"
+    ui->widget->setStyleSheet("background-color: rgb(0, 170, 255);"
                               "border:none;");
     emit sig_color(QString("black"));
 }

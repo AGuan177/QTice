@@ -17,7 +17,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,8 +28,6 @@ public:
     QLineEdit *lineEditGroupName;
     QPushButton *pushButtonCreateGroup;
     QWidget *widget;
-    QPushButton *logo;
-    QToolButton *toolButton;
     QLabel *label_2;
 
     void setupUi(QWidget *GroupRegster)
@@ -65,17 +62,11 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
+        widget->setStyleSheet(QLatin1String("background-color: rgb(0, 170, 255);\n"
 ""));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(20, 10, 61, 61));
-        toolButton = new QToolButton(widget);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
-        toolButton->setGeometry(QRect(30, 20, 47, 21));
         label_2 = new QLabel(widget);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(170, 20, 241, 51));
+        label_2->setGeometry(QRect(130, 20, 261, 61));
         label_2->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
 
         retranslateUi(GroupRegster);
@@ -89,8 +80,6 @@ public:
         label->setText(QString());
         lineEditGroupName->setPlaceholderText(QApplication::translate("GroupRegster", "\347\276\244\345\220\215", Q_NULLPTR));
         pushButtonCreateGroup->setText(QApplication::translate("GroupRegster", "\345\210\233\345\273\272", Q_NULLPTR));
-        logo->setText(QString());
-        toolButton->setText(QApplication::translate("GroupRegster", "...", Q_NULLPTR));
         label_2->setText(QApplication::translate("GroupRegster", "IceBreaker", Q_NULLPTR));
     } // retranslateUi
 

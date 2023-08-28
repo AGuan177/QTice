@@ -27,7 +27,6 @@ class Ui_add_friend
 {
 public:
     QWidget *widget;
-    QPushButton *logo;
     QLabel *label;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
@@ -55,18 +54,12 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
+        widget->setStyleSheet(QLatin1String("background-color: rgb(0, 170, 255);\n"
+"\n"
 ""));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(30, 20, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(110, 20, 231, 71));
+        label->setGeometry(QRect(130, 10, 281, 101));
         label->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
         gridLayoutWidget = new QWidget(add_friend);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
@@ -152,7 +145,6 @@ public:
     void retranslateUi(QWidget *add_friend)
     {
         add_friend->setWindowTitle(QApplication::translate("add_friend", "AddFriend", Q_NULLPTR));
-        logo->setText(QString());
         label->setText(QApplication::translate("add_friend", "IceBreaker", Q_NULLPTR));
         lineEditGroupId->setText(QString());
         lineEditGroupId->setPlaceholderText(QApplication::translate("add_friend", "\347\276\244\350\201\212ID", Q_NULLPTR));

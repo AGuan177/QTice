@@ -114,7 +114,7 @@ border:none;</string>
    <widget class="QPushButton" name="logo">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>40</x>
       <y>20</y>
       <width>81</width>
       <height>71</height>
@@ -268,8 +268,6 @@ font: 75 italic 36pt &quot;Adobe Arabic&quot;;</string>
      </item>
     </layout>
    </widget>
-   <zorder>widget</zorder>
-   <zorder>horizontalLayoutWidget_2</zorder>
   </widget>
   <zorder>widget_2</zorder>
   <zorder>horizontalLayoutWidget</zorder>

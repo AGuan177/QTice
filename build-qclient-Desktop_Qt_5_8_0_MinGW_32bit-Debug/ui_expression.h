@@ -33,7 +33,6 @@ public:
     QPushButton *pushButton_5;
     QPushButton *pushButton_3;
     QWidget *widget;
-    QPushButton *logo;
     QLabel *label;
 
     void setupUi(QWidget *expression)
@@ -109,15 +108,8 @@ public:
         widget->setGeometry(QRect(0, 0, 401, 71));
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
+        widget->setStyleSheet(QLatin1String("background-color: rgb(0, 170, 255);\n"
 ""));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(20, 10, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
         label = new QLabel(widget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(100, 10, 221, 51));
@@ -137,7 +129,6 @@ public:
         pushButton_1->setText(QString());
         pushButton_5->setText(QString());
         pushButton_3->setText(QString());
-        logo->setText(QString());
         label->setText(QApplication::translate("expression", "IceBreaker", Q_NULLPTR));
     } // retranslateUi
 

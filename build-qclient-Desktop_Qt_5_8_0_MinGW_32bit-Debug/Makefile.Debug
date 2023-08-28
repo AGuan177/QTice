@@ -414,6 +414,9 @@ debug/moc_cell_main.cpp: ../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QWid
 		../qClient/friend_windows.h \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -891,6 +894,9 @@ debug/moc_friend_windows.cpp: ../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QImage \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -1010,6 +1016,10 @@ debug/moc_groupregster.cpp: ../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/Q
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QMessageBox \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qmessagebox.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qdialog.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qicon.h \
 		../qClient/groupregster.h \
 		debug/moc_predefs.h \
 		../../../../Qt5.8/5.8/mingw53_32/bin/moc.exe
@@ -1754,6 +1764,9 @@ debug/moc_mainwindow.cpp: ../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QMa
 		../qClient/friend_windows.h \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -1947,6 +1960,9 @@ debug/moc_add_friend.cpp: ../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QWi
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QImage \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../qClient/add_friend.h \
 		debug/moc_predefs.h \
@@ -2902,6 +2918,9 @@ debug/main.o: ../qClient/main.cpp ../qClient/mainwindow.h \
 		../qClient/friend_windows.h \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -3097,6 +3116,9 @@ debug/cell_main.o: ../qClient/cell_main.cpp ../qClient/cell_main.h \
 		../qClient/friend_windows.h \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -3117,7 +3139,6 @@ debug/cell_main.o: ../qClient/cell_main.cpp ../qClient/cell_main.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qheaderview.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QPushButton \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QSpacerItem \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QList \
@@ -3631,6 +3652,9 @@ debug/friend_windows.o: ../qClient/friend_windows.cpp ../qClient/friend_windows.
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QImage \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -3651,7 +3675,6 @@ debug/friend_windows.o: ../qClient/friend_windows.cpp ../qClient/friend_windows.
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qheaderview.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QPushButton \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QTabWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\friend_windows.o ..\qClient\friend_windows.cpp
 
@@ -3766,11 +3789,14 @@ debug/groupregster.o: ../qClient/groupregster.cpp ../qClient/groupregster.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QMessageBox \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qmessagebox.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qdialog.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qicon.h \
 		ui_groupregster.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QVariant \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QAction \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qaction.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qicon.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QApplication \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qapplication.h \
@@ -3809,10 +3835,13 @@ debug/groupregster.o: ../qClient/groupregster.cpp ../qClient/groupregster.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextoption.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QPushButton \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QTextEdit \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtextedit.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextdocument.h
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QHBoxLayout \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qboxlayout.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlayout.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qgridlayout.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QPixmap \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QIcon
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\groupregster.o ..\qClient\groupregster.cpp
 
 debug/groupchat_windows.o: ../qClient/groupchat_windows.cpp ../qClient/groupchat_windows.h \
@@ -4325,6 +4354,8 @@ debug/regster_windows.o: ../qClient/regster_windows.cpp ../qClient/regster_windo
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtabbar.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QLabel \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlabel.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QLineEdit \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlineedit.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextcursor.h \
@@ -4335,10 +4366,20 @@ debug/regster_windows.o: ../qClient/regster_windows.cpp ../qClient/regster_windo
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QSpacerItem \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QTextEdit \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtextedit.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextdocument.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QVBoxLayout
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QVBoxLayout \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QGraphicsEllipseItem \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qgraphicsitem.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QImage \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QGraphicsView \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qpainter.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qscrollarea.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qgraphicsscene.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QGraphicsScene \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QFileDialog \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qfiledialog.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/qdir.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/qfileinfo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\regster_windows.o ..\qClient\regster_windows.cpp
 
 debug/signin_windows.o: ../qClient/signin_windows.cpp ../qClient/signin_windows.h \
@@ -4492,6 +4533,8 @@ debug/signin_windows.o: ../qClient/signin_windows.cpp ../qClient/signin_windows.
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtabbar.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtabwidget.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qrubberband.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QLabel \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlabel.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QLineEdit \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlineedit.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextcursor.h \
@@ -4502,9 +4545,6 @@ debug/signin_windows.o: ../qClient/signin_windows.cpp ../qClient/signin_windows.
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QSpacerItem \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QTextEdit \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtextedit.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextdocument.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\signin_windows.o ..\qClient\signin_windows.cpp
 
@@ -4696,6 +4736,9 @@ debug/mainwindow.o: ../qClient/mainwindow.cpp ../qClient/mainwindow.h \
 		../qClient/friend_windows.h \
 		../qClient/notice_windows.h \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QTime \
@@ -4901,6 +4944,9 @@ debug/add_friend.o: ../qClient/add_friend.cpp ../qClient/add_friend.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/QImage \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QDesktopWidget \
 		../qClient/groupregster.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QToolButton \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtoolbutton.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../qClient/groupchat_windows.h \
 		ui_add_friend.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtCore/QVariant \
@@ -4920,7 +4966,6 @@ debug/add_friend.o: ../qClient/add_friend.cpp ../qClient/add_friend.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlineedit.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QPushButton \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QSpacerItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\add_friend.o ..\qClient\add_friend.cpp
 
@@ -5072,13 +5117,6 @@ debug/changecolor_window.o: ../qClient/changecolor_window.cpp ../qClient/changec
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QSpacerItem \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QTextEdit \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtextedit.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextdocument.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextoption.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextcursor.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextformat.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qpen.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\changecolor_window.o ..\qClient\changecolor_window.cpp
 
@@ -5241,16 +5279,11 @@ debug/expression.o: ../qClient/expression.cpp ../qClient/expression.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qboxlayout.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QHeaderView \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qheaderview.h \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QLabel \
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qlabel.h \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QPushButton \
 		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/QTextEdit \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qtextedit.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextdocument.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextoption.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextcursor.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qtextformat.h \
-		../../../../Qt5.8/5.8/mingw53_32/include/QtGui/qpen.h
+		../../../../Qt5.8/5.8/mingw53_32/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\expression.o ..\qClient\expression.cpp
 
 debug/screen.o: ../qClient/screen.cpp ../qClient/screen.h \
