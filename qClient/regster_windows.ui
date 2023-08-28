@@ -96,7 +96,7 @@ border:none;</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>-10</y>
      <width>501</width>
      <height>131</height>
     </rect>
@@ -109,13 +109,14 @@ border:none;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 170, 255);
+background-image: url(:/new/prefix1/img/title1.png);
 
 </string>
    </property>
    <widget class="QPushButton" name="logo">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>150</x>
       <y>20</y>
       <width>81</width>
       <height>71</height>
@@ -128,8 +129,8 @@ border:none;</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>30</y>
+      <x>0</x>
+      <y>0</y>
       <width>281</width>
       <height>61</height>
      </rect>

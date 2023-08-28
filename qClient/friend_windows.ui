@@ -97,6 +97,23 @@
        <property name="spacing">
         <number>0</number>
        </property>
+       <item row="0" column="0">
+        <widget class="QListWidget" name="listWidgetGroup">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/new/prefix1/pintree.jpg);</string>
+         </property>
+        </widget>
+       </item>
       </layout>
       <widget class="QListWidget" name="listWidgetGroup">
        <property name="enabled">
@@ -121,6 +138,8 @@
         <string notr="true">border-image: url(:/new/prefix1/pintree.jpg);</string>
        </property>
       </widget>
+=======
+>>>>>>> Stashed changes
      </widget>
     </widget>
    </item>
