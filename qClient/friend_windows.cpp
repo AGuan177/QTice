@@ -419,13 +419,13 @@ void Friend_Windows::setHeadImage()
 {
     QString image;
     image= QString("./head.jpg");
-    ui->changeHead->setText("");
+    //ui->changeHead->setText("");
     QPixmap pixmap(image);
     QPixmap fitpixmap = pixmap.scaled(70, 70, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
-    ui->changeHead->setIcon(QIcon(fitpixmap));
-    ui->changeHead->setIconSize(QSize(70, 70));
-    ui->changeHead->setFlat(true);
-    ui->changeHead->setStyleSheet("border: 0px"); //消除边框
+    //ui->changeHead->setIcon(QIcon(fitpixmap));
+    //ui->changeHead->setIconSize(QSize(70, 70));
+    //ui->changeHead->setFlat(true);
+    //ui->changeHead->setStyleSheet("border: 0px"); //消除边框
 
 }
 
@@ -433,12 +433,12 @@ void Friend_Windows::initHeadImage()
 {
     QString image;
     image= QString(":/new/prefix1/img/head.jpg");
-    ui->changeHead->setText("");
+    //ui->changeHead->setText("");
     QPixmap pixmap(image);
     QPixmap fitpixmap = pixmap.scaled(70, 70, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
-    ui->changeHead->setIcon(QIcon(fitpixmap));
-    ui->changeHead->setIconSize(QSize(70, 70));
-    ui->changeHead->setFlat(true);
-    ui->changeHead->setStyleSheet("border: 0px"); //消除边框
+    //ui->changeHead->setIcon(QIcon(fitpixmap));
+    //ui->changeHead->setIconSize(QSize(70, 70));
+    //ui->changeHead->setFlat(true);
+    //ui->changeHead->setStyleSheet("border: 0px"); //消除边框
 
 }
