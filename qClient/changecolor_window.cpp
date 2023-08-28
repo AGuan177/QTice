@@ -18,7 +18,7 @@ ChangeColor_Window::~ChangeColor_Window()
 
 void ChangeColor_Window::on_blue_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(54,46,205);"
+    ui->widget->setStyleSheet("background-color:rgb(190,173,250);"
                               "border:none;");
     emit sig_color(QString("blue"));
 }

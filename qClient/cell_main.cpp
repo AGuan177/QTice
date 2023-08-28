@@ -134,10 +134,10 @@ void Cell_Main::ChangeColor(QString color)
     }
     if(color == "yellow")
     {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(176,138,23)}");
-        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(255,247,183);}");
-        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(255,247,183);}");
-        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(244,220,123);}");
+        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(248,157,3)}");
+        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(247,230,196);}");
+        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(247,230,196);}");
+        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(255,164,27);}");
     }
     if(color == "red")
     {
