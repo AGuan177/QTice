@@ -127,10 +127,10 @@ void Cell_Main::ChangeColor(QString color)
 {
     if(color == "blue")
     {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(54,46,205)}");
-        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(231,230,249);}");
-        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(231,230,249);}");
-        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(202,200,242);}");
+        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(190,173,250)}");
+        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(233,204,251);}");
+        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(233,204,251);}");
+        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(208,191,255);}");
     }
     if(color == "yellow")
     {
