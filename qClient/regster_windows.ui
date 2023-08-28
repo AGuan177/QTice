@@ -108,7 +108,8 @@ border:none;</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(7,193,96);
+    <string notr="true">background-color: rgb(0, 170, 255);
+
 </string>
    </property>
    <widget class="QPushButton" name="logo">

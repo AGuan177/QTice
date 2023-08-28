@@ -93,7 +93,8 @@ public:
         widget->setGeometry(QRect(0, 0, 501, 131));
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
+        widget->setStyleSheet(QLatin1String("background-color: rgb(0, 170, 255);\n"
+"\n"
 ""));
         logo = new QPushButton(widget);
         logo->setObjectName(QStringLiteral("logo"));
