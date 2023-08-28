@@ -28,5 +28,7 @@
         <file>img/file_pic.png</file>
         <file>img/logo.png</file>
         <file>img/title1.png</file>
+        <file>img/title.png</file>
+        <file>img/titlt2.png</file>
     </qresource>
 </RCC>
