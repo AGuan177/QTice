@@ -98,7 +98,7 @@
        <string notr="true">font: 25 15pt &quot;微软雅黑 Light&quot;;</string>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;蔚蓝&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;之海&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;梦幻&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
@@ -114,7 +114,7 @@
        <string notr="true">font: 25 15pt &quot;微软雅黑 Light&quot;;</string>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;热烈&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;之夏&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;暖阳&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
@@ -229,7 +229,7 @@
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:rgb(255, 105, 105);</string>
+       <string notr="true">background-color:rgb(255, 229, 202);</string>
       </property>
       <property name="text">
        <string/>
@@ -248,7 +248,7 @@
        <string notr="true">font: 25 15pt &quot;微软雅黑 Light&quot;;</string>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;静谧&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;之夜&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;原始&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>
@@ -286,7 +286,7 @@
        <string notr="true">font: 25 15pt &quot;微软雅黑 Light&quot;;</string>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;元气&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;之森&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;元气&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </item>

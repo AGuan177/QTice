@@ -60,9 +60,9 @@ void Friend_Windows::ChangeColor(QString color)
     if(color == "red")
     {
         ui->listWidgetFriend->setStyleSheet("border:none;"
-                                            "background-color:rgb(244,198,205)");
+                                            "background-color:rgb(255, 229, 202)");
         ui->listWidgetGroup->setStyleSheet("border:none;"
-                                           "background-color:rgb(244,198,205)");
+                                           "background-color:rgb(255, 229, 202)");
         //ui->listWidgetNewNote->setStyleSheet("border:none;"
                                            //"background-color:rgb(244,198,205)");
         ui->tabWidget->setStyleSheet("border:none");
@@ -70,13 +70,13 @@ void Friend_Windows::ChangeColor(QString color)
                                    "font: 75 12pt \"Agency FB\";");
         ui->tabWidget->setStyleSheet("QTabWidget{"
                                      "border:none;"
-                                     "background:rgb(244,198,205);"
+                                     "background:rgb(255, 229, 202);"
                                      "}"
                                      "QTabBar::tab{"
-                                     "background:rgb(249,223,227);"
+                                     "background:rgb(255, 229, 202);"
                                      "}"
                                      "QTabBar::tab:selected{"
-                                     "background:rgb(244,198,205);"
+                                     "background:rgb(255, 229, 202);"
                                      "}");
         ui->gridLayout->setMargin(0);
     }

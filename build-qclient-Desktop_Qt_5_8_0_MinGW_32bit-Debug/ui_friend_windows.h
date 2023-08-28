@@ -41,7 +41,7 @@ public:
     {
         if (Friend_Windows->objectName().isEmpty())
             Friend_Windows->setObjectName(QStringLiteral("Friend_Windows"));
-        Friend_Windows->resize(400, 800);
+        Friend_Windows->resize(300, 800);
         Friend_Windows->setStyleSheet(QStringLiteral(""));
         gridLayout = new QGridLayout(Friend_Windows);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));

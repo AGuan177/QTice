@@ -126,7 +126,7 @@ public:
         red->setObjectName(QStringLiteral("red"));
         red->setMinimumSize(QSize(81, 81));
         red->setMaximumSize(QSize(81, 81));
-        red->setStyleSheet(QStringLiteral("background-color:rgb(255, 105, 105);"));
+        red->setStyleSheet(QStringLiteral("background-color:rgb(255, 229, 202);"));
 
         gridLayout->addWidget(red, 0, 5, 1, 1);
 
@@ -166,14 +166,14 @@ public:
     {
         ChangeColor_Window->setWindowTitle(QApplication::translate("ChangeColor_Window", "Dialog", Q_NULLPTR));
         label_6->setText(QApplication::translate("ChangeColor_Window", "IceBreaker", Q_NULLPTR));
-        label_2->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\350\224\232\350\223\235</p><p align=\"center\">\344\271\213\346\265\267</p></body></html>", Q_NULLPTR));
-        label_3->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\347\203\255\347\203\210</p><p align=\"center\">\344\271\213\345\244\217</p></body></html>", Q_NULLPTR));
+        label_2->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\346\242\246\345\271\273</p></body></html>", Q_NULLPTR));
+        label_3->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\346\232\226\351\230\263</p></body></html>", Q_NULLPTR));
         blue->setText(QString());
         black->setText(QString());
         red->setText(QString());
-        label->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\351\235\231\350\260\247</p><p align=\"center\">\344\271\213\345\244\234</p></body></html>", Q_NULLPTR));
+        label->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\345\216\237\345\247\213</p></body></html>", Q_NULLPTR));
         yellow->setText(QString());
-        label_4->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\345\205\203\346\260\224</p><p align=\"center\">\344\271\213\346\243\256</p></body></html>", Q_NULLPTR));
+        label_4->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\345\205\203\346\260\224</p></body></html>", Q_NULLPTR));
         label_5->setText(QApplication::translate("ChangeColor_Window", "BE WHAT YOU WANNA BE!", Q_NULLPTR));
     } // retranslateUi
 
