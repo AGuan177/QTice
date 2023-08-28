@@ -19,7 +19,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,8 +27,7 @@ class Ui_ChangeColor_Window
 {
 public:
     QWidget *widget;
-    QPushButton *logo;
-    QTextEdit *textEdit;
+    QLabel *label_6;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
     QSpacerItem *horizontalSpacer_5;
@@ -63,19 +61,11 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QStringLiteral("background-color:rgb(181, 238, 105)"));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(20, 20, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(100, 20, 151, 51));
-        textEdit->setStyleSheet(QLatin1String("border:none;\n"
-"font: 9pt \"Eras Bold ITC\";"));
+        widget->setStyleSheet(QStringLiteral("background-color:rgb(0, 170, 255)"));
+        label_6 = new QLabel(widget);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(110, 20, 221, 71));
+        label_6->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
         gridLayoutWidget = new QWidget(ChangeColor_Window);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
         gridLayoutWidget->setGeometry(QRect(0, 120, 501, 201));
@@ -136,7 +126,7 @@ public:
         red->setObjectName(QStringLiteral("red"));
         red->setMinimumSize(QSize(81, 81));
         red->setMaximumSize(QSize(81, 81));
-        red->setStyleSheet(QStringLiteral("background-color:rgb(255, 105, 105);"));
+        red->setStyleSheet(QStringLiteral("background-color:rgb(255, 229, 202);"));
 
         gridLayout->addWidget(red, 0, 5, 1, 1);
 
@@ -175,20 +165,15 @@ public:
     void retranslateUi(QDialog *ChangeColor_Window)
     {
         ChangeColor_Window->setWindowTitle(QApplication::translate("ChangeColor_Window", "Dialog", Q_NULLPTR));
-        logo->setText(QString());
-        textEdit->setHtml(QApplication::translate("ChangeColor_Window", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Eras Bold ITC'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">YourTalk</span></p></body></html>", Q_NULLPTR));
-        label_2->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\350\224\232\350\223\235</p><p align=\"center\">\344\271\213\346\265\267</p></body></html>", Q_NULLPTR));
-        label_3->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\347\203\255\347\203\210</p><p align=\"center\">\344\271\213\345\244\217</p></body></html>", Q_NULLPTR));
+        label_6->setText(QApplication::translate("ChangeColor_Window", "IceBreaker", Q_NULLPTR));
+        label_2->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\346\242\246\345\271\273</p></body></html>", Q_NULLPTR));
+        label_3->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\346\232\226\351\230\263</p></body></html>", Q_NULLPTR));
         blue->setText(QString());
         black->setText(QString());
         red->setText(QString());
-        label->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\351\235\231\350\260\247</p><p align=\"center\">\344\271\213\345\244\234</p></body></html>", Q_NULLPTR));
+        label->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\345\216\237\345\247\213</p></body></html>", Q_NULLPTR));
         yellow->setText(QString());
-        label_4->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\345\205\203\346\260\224</p><p align=\"center\">\344\271\213\346\243\256</p></body></html>", Q_NULLPTR));
+        label_4->setText(QApplication::translate("ChangeColor_Window", "<html><head/><body><p align=\"center\">\345\205\203\346\260\224</p></body></html>", Q_NULLPTR));
         label_5->setText(QApplication::translate("ChangeColor_Window", "BE WHAT YOU WANNA BE!", Q_NULLPTR));
     } // retranslateUi
 

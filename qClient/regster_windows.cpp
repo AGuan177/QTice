@@ -1,10 +1,14 @@
 #include "regster_windows.h"
 #include "ui_regster_windows.h"
+#include<QGraphicsEllipseItem>
+#include <QImage>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QFileDialog>
 
 Regster_Windows::Regster_Windows(QTcpSocket* tcpsocket)
   :  ui(new Ui::Regster_Windows),tcpSocket(tcpsocket)
 {
-
     ui->setupUi(this);
     setWindowTitle("Register");
     ui->logo->setSizeIncrement(50,50);
@@ -12,7 +16,6 @@ Regster_Windows::Regster_Windows(QTcpSocket* tcpsocket)
     ui->logo->setIconSize(QSize(80,80));
     QShortcut *key=new QShortcut(QKeySequence(Qt::Key_Return),this);//创建一个快捷键"Key_Return"键
     connect(key,SIGNAL(activated()),this,SLOT(on_pushButtonRegster_clicked()));//连接到指定槽函数
-
 }
 
 Regster_Windows::~Regster_Windows()

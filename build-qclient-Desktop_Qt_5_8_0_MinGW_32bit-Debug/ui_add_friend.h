@@ -15,10 +15,10 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -27,8 +27,7 @@ class Ui_add_friend
 {
 public:
     QWidget *widget;
-    QPushButton *logo;
-    QTextEdit *textEdit;
+    QLabel *label;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
     QLineEdit *lineEditGroupId;
@@ -42,7 +41,7 @@ public:
     {
         if (add_friend->objectName().isEmpty())
             add_friend->setObjectName(QStringLiteral("add_friend"));
-        add_friend->resize(499, 345);
+        add_friend->resize(501, 345);
         add_friend->setStyleSheet(QLatin1String("QLineEdit{\n"
 "	border:none;\n"
 "	background:rgb(235,235,235);\n"
@@ -55,23 +54,16 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
         widget->setSizePolicy(sizePolicy);
-        widget->setStyleSheet(QLatin1String("background-color: rgb(7,193,96);\n"
+        widget->setStyleSheet(QLatin1String("background-color: rgb(0, 170, 255);\n"
+"\n"
 ""));
-        logo = new QPushButton(widget);
-        logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(30, 20, 50, 50));
-        sizePolicy.setHeightForWidth(logo->sizePolicy().hasHeightForWidth());
-        logo->setSizePolicy(sizePolicy);
-        logo->setMinimumSize(QSize(50, 50));
-        logo->setMaximumSize(QSize(50, 50));
-        textEdit = new QTextEdit(widget);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(100, 20, 151, 51));
-        textEdit->setStyleSheet(QLatin1String("border:none;\n"
-"font: 9pt \"Eras Bold ITC\";"));
+        label = new QLabel(widget);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(130, 10, 281, 101));
+        label->setStyleSheet(QStringLiteral("font: 75 italic 36pt \"Adobe Arabic\";"));
         gridLayoutWidget = new QWidget(add_friend);
         gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(20, 160, 451, 125));
+        gridLayoutWidget->setGeometry(QRect(20, 160, 451, 131));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -81,7 +73,7 @@ public:
         lineEditGroupId->setSizePolicy(sizePolicy);
         lineEditGroupId->setMinimumSize(QSize(300, 40));
         lineEditGroupId->setStyleSheet(QStringLiteral("border-bottom-color:rgb(245,245,245)"));
-        lineEditGroupId->setInputMethodHints(Qt::ImhNone);
+        lineEditGroupId->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData);
         lineEditGroupId->setEchoMode(QLineEdit::Password);
 
         gridLayout->addWidget(lineEditGroupId, 1, 0, 1, 1);
@@ -152,13 +144,8 @@ public:
 
     void retranslateUi(QWidget *add_friend)
     {
-        add_friend->setWindowTitle(QApplication::translate("add_friend", "Form", Q_NULLPTR));
-        logo->setText(QString());
-        textEdit->setHtml(QApplication::translate("add_friend", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Eras Bold ITC'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; color:#ffffff;\">YourTalk</span></p></body></html>", Q_NULLPTR));
+        add_friend->setWindowTitle(QApplication::translate("add_friend", "AddFriend", Q_NULLPTR));
+        label->setText(QApplication::translate("add_friend", "IceBreaker", Q_NULLPTR));
         lineEditGroupId->setText(QString());
         lineEditGroupId->setPlaceholderText(QApplication::translate("add_friend", "\347\276\244\350\201\212ID", Q_NULLPTR));
         lineEditFriendId->setPlaceholderText(QApplication::translate("add_friend", "\345\245\275\345\217\213ID", Q_NULLPTR));

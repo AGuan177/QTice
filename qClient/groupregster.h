@@ -5,6 +5,7 @@
 #include<QTcpSocket>
 #include<QDebug>
 #include<QMessageBox>
+#include <QToolButton>
 namespace Ui {
 class GroupRegster;
 }

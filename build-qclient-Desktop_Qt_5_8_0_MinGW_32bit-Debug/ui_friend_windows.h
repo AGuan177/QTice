@@ -35,16 +35,13 @@ public:
     QWidget *tab_2;
     QGridLayout *gridLayout_3;
     QListWidget *listWidgetGroup;
-    QWidget *tab_3;
-    QGridLayout *gridLayout_2;
-    QListWidget *listWidgetNewNote;
     QLabel *labelID;
 
     void setupUi(QWidget *Friend_Windows)
     {
         if (Friend_Windows->objectName().isEmpty())
             Friend_Windows->setObjectName(QStringLiteral("Friend_Windows"));
-        Friend_Windows->resize(400, 800);
+        Friend_Windows->resize(300, 800);
         Friend_Windows->setStyleSheet(QStringLiteral(""));
         gridLayout = new QGridLayout(Friend_Windows);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
@@ -93,20 +90,6 @@ public:
         gridLayout_3->addWidget(listWidgetGroup, 0, 0, 1, 1);
 
         tabWidget->addTab(tab_2, QString());
-        tab_3 = new QWidget();
-        tab_3->setObjectName(QStringLiteral("tab_3"));
-        gridLayout_2 = new QGridLayout(tab_3);
-        gridLayout_2->setSpacing(0);
-        gridLayout_2->setObjectName(QStringLiteral("gridLayout_2"));
-        gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        listWidgetNewNote = new QListWidget(tab_3);
-        listWidgetNewNote->setObjectName(QStringLiteral("listWidgetNewNote"));
-        listWidgetNewNote->setFont(font1);
-        listWidgetNewNote->setStyleSheet(QStringLiteral("border-image: url(:/new/prefix1/pintree.jpg);"));
-
-        gridLayout_2->addWidget(listWidgetNewNote, 0, 0, 1, 1);
-
-        tabWidget->addTab(tab_3, QString());
 
         gridLayout->addWidget(tabWidget, 1, 0, 1, 2);
 
@@ -116,6 +99,9 @@ public:
 
         gridLayout->addWidget(labelID, 0, 1, 1, 1);
 
+        tabWidget->raise();
+        changeHead->raise();
+        labelID->raise();
 
         retranslateUi(Friend_Windows);
 
@@ -131,7 +117,6 @@ public:
         changeHead->setText(QApplication::translate("Friend_Windows", "PushButton", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("Friend_Windows", "\346\234\213\345\217\213", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("Friend_Windows", " \347\276\244\350\201\212", Q_NULLPTR));
-        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("Friend_Windows", "\346\226\260\346\266\210\346\201\257", Q_NULLPTR));
         labelID->setText(QString());
     } // retranslateUi
 

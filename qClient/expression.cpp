@@ -17,9 +17,9 @@ expression::expression(QTcpSocket * tcpsocket) :
     ui->pushButton_4->setIconSize(QSize(80, 80));
     ui->pushButton_5->setIconSize(QSize(80, 80));
     ui->pushButton_6->setIconSize(QSize(80, 80));
-    ui->logo->setSizeIncrement(50,50);
-    ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
-    ui->logo->setIconSize(QSize(100,100));
+    //ui->logo->setSizeIncrement(50,50);
+    //ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
+    //ui->logo->setIconSize(QSize(100,100));
 
 }
 

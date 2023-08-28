@@ -7,9 +7,9 @@ add_friend::add_friend(QTcpSocket * tcpsocket) :
 {
     ui->setupUi(this);
     groupregster =new GroupRegster(tcpSocket);
-    ui->logo->setSizeIncrement(50,50);
-    ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
-    ui->logo->setIconSize(QSize(100,100));
+    //ui->logo->setSizeIncrement(50,50);
+    //ui->logo->setIcon(QIcon(":/new/prefix1/img/logo.jpg"));
+    //ui->logo->setIconSize(QSize(100,100));
 }
 
 add_friend::~add_friend()
