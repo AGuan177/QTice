@@ -148,7 +148,7 @@ void Cell_Main::ChangeColor(QString color)
     }
     if(color == "black")
     {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(46,46,46)}");
+        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(100,100,100)}");
         ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(245,245,245);}");
         ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(245,245,245);}");
         ui->main_widget->setStyleSheet("");
