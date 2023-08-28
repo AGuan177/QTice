@@ -42,14 +42,16 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>110</x>
       <y>10</y>
       <width>281</width>
       <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 italic 36pt &quot;Adobe Arabic&quot;;</string>
+     <string notr="true">
+font: 36pt &quot;Kunstler Script&quot;;
+</string>
     </property>
     <property name="text">
      <string>IceBreaker</string>
@@ -110,29 +112,7 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QLineEdit" name="lineEditFriendId">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>300</width>
-        <height>40</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-bottom-color:rgb(245,245,245)</string>
-      </property>
-      <property name="placeholderText">
-       <string>好友ID</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
+    <item row="1" column="1">
      <widget class="QPushButton" name="pushButtonIntoGroup">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -168,7 +148,29 @@ border:none;</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="lineEditFriendId">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color:rgb(245,245,245)</string>
+      </property>
+      <property name="placeholderText">
+       <string>好友ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
      <widget class="QPushButton" name="pushButtonGetNewFriend">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -204,7 +206,7 @@ border:none;</string>
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
+    <item row="2" column="1">
      <widget class="QPushButton" name="pushButtonCreateGroup">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -231,27 +233,14 @@ border:none;</string>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(46,46,46);
-color: rgb(255, 255, 255);
-border:none;</string>
+       <string notr="true">background-color: rgb(46,46，46);
+color: rgb(0, 0, 0);
+</string>
       </property>
       <property name="text">
        <string>创建群聊</string>
       </property>
      </widget>
-    </item>
-    <item row="0" column="1">
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
     </item>
    </layout>
   </widget>

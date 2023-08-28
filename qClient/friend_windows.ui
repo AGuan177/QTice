@@ -36,20 +36,10 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="1">
-    <widget class="QLabel" name="labelID">
-     <property name="styleSheet">
-      <string notr="true">background:rgba(225,225,225,0.5)</string>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </item>
-   <item row="1" column="0" colspan="2">
+   <item row="1" column="0" colspan="3">
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -116,15 +106,15 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>16</width>
-         <height>193</height>
+         <width>391</width>
+         <height>681</height>
         </rect>
        </property>
        <property name="font">
         <font>
-         <pointsize>14</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
@@ -132,6 +122,16 @@
        </property>
       </widget>
      </widget>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLabel" name="labelID">
+     <property name="styleSheet">
+      <string notr="true">background:rgba(225,225,225,0.5)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
     </widget>
    </item>
   </layout>

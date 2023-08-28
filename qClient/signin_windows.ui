@@ -78,12 +78,13 @@ QLineEdit{
      <rect>
       <x>280</x>
       <y>40</y>
-      <width>221</width>
+      <width>291</width>
       <height>91</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 italic 36pt &quot;Adobe Arabic&quot;;</string>
+     <string notr="true">font: 36pt &quot;Kunstler Script&quot;;
+</string>
     </property>
     <property name="text">
      <string>IceBreaker</string>
