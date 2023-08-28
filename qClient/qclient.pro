@@ -77,4 +77,5 @@ FORMS    += cell_main.ui \
 RESOURCES += \
     img.qrc
 
-DISTFILES +=
+DISTFILES += \
+    img/title3.png

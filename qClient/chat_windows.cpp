@@ -93,13 +93,13 @@ void Chat_windows::ChangeColor(QString color)
     }
     if(color == "yellow")
     {
-        ui->listWidget->setStyleSheet("background-color:rgb(255,247,183);"
+        ui->listWidget->setStyleSheet("background-color:rgb(247,230,196);"
                                       "border:none;");
-        ui->textEdit->setStyleSheet("background-color:rgb(255,247,183);"
+        ui->textEdit->setStyleSheet("background-color:rgb(247,230,196);"
                                     "border:none;");
-        ui->widget->setStyleSheet("background-color:rgb(255,247,183)");
-        ui->widget_2->setStyleSheet("background-color:rgb(255,247,183)");
-        ui->widget_3->setStyleSheet("background-color:rgb(255,247,183)");
+        ui->widget->setStyleSheet("background-color:rgb(247,230,196)");
+        ui->widget_2->setStyleSheet("background-color:rgb(247,230,196)");
+        ui->widget_3->setStyleSheet("background-color:rgb(247,230,196)");
         ui->Send->setStyleSheet("QPushButton#Send{"
                                 "font: 11pt \"幼圆\";"
                                 "color:rgb(176,138,23);"

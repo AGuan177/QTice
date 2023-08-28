@@ -39,43 +39,13 @@
    <property name="geometry">
     <rect>
      <x>40</x>
-     <y>170</y>
-     <width>271</width>
-     <height>51</height>
+     <y>180</y>
+     <width>261</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="placeholderText">
     <string>群名</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonCreateGroup">
-   <property name="geometry">
-    <rect>
-     <x>350</x>
-     <y>160</y>
-     <width>100</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>100</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>100</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(46,46,46);
-color: rgb(255, 255, 255);
-border:none;</string>
-   </property>
-   <property name="text">
-    <string>创建</string>
    </property>
   </widget>
   <widget class="QWidget" name="widget" native="true">
@@ -94,25 +64,67 @@ border:none;</string>
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 170, 255);
-</string>
+    <string notr="true">#widget{background-image: url(:/new/prefix1/img/title3.png);}</string>
    </property>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>10</x>
       <y>20</y>
       <width>261</width>
       <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 75 italic 36pt &quot;Adobe Arabic&quot;;</string>
+     <string notr="true">font: 36pt &quot;Kunstler Script&quot;;
+</string>
     </property>
     <property name="text">
      <string>IceBreaker</string>
     </property>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButtonCreateGroup">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>180</y>
+     <width>100</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>90</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(46,46，46);
+color: rgb(0, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>创建</string>
+   </property>
   </widget>
  </widget>
  <resources/>

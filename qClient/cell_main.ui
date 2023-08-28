@@ -259,7 +259,7 @@ border:none;
             <string notr="true">font: 24pt &quot;Eras Bold ITC&quot;;</string>
            </property>
            <property name="text">
-            <string>TextLabel</string>
+            <string>IceBreaker</string>
            </property>
           </widget>
          </item>
@@ -283,7 +283,6 @@ border:none;
           <height>16777215</height>
          </size>
         </property>
-        <zorder>side_bar</zorder>
        </widget>
       </item>
       <item row="0" column="0" rowspan="2">

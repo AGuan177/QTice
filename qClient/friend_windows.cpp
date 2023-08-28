@@ -83,23 +83,23 @@ void Friend_Windows::ChangeColor(QString color)
     if(color == "yellow")
     {
         ui->listWidgetFriend->setStyleSheet("border:none;"
-                                            "background-color:rgb(244,220,123)");
+                                            "background-color:rgb(247,230,196);");
         ui->listWidgetGroup->setStyleSheet("border:none;"
-                                           "background-color:rgb(244,220,123)");
+                                           "background-color:rgb(247,230,196);");
         //ui->listWidgetNewNote->setStyleSheet("border:none;"
-                                          // "background-color:rgb(244,220,123)");
+                                          // "background-color:rgb(247,230,196)");
         ui->tabWidget->setStyleSheet("border:none");
         ui->labelID->setStyleSheet("background:rgba(225,225,225,0);"
                                    "font: 75 12pt \"Agency FB\";");
         ui->tabWidget->setStyleSheet("QTabWidget{"
                                      "border:none;"
-                                     "background:rgb(244,220,123);"
+                                     "background:rgb(255, 229, 202);"
                                      "}"
                                      "QTabBar::tab{"
-                                     "background:rgb(255,247,183);"
+                                     "background:rgb(255, 229, 202);"
                                      "}"
                                      "QTabBar::tab:selected{"
-                                     "background:rgb(244,220,123);"
+                                     "background:rgb(255, 229, 202);"
                                      "}");
         ui->gridLayout->setMargin(0);
     }

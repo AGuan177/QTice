@@ -30,13 +30,13 @@ void ChangeColor_Window::on_black_clicked()
 }
 void ChangeColor_Window::on_yellow_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(176,138,23);"
+    ui->widget->setStyleSheet("background-color:rgb(248,157,3);"
                               "border:none;");
     emit sig_color(QString("yellow"));
 }
 void ChangeColor_Window::on_red_clicked()
 {
-    ui->widget->setStyleSheet("background-color:rgb(188,35,62);"
+    ui->widget->setStyleSheet("background-color:rgb(250, 152, 132);"
                               "border:none;");
     emit sig_color(QString("red"));
 }
