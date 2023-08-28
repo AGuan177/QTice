@@ -69,14 +69,14 @@ void Groupchat_windows::ChangeColor(QString color)
     }
     if(color == "yellow")
     {
-        ui->listWidget->setStyleSheet("background-color:rgb(255,247,183);"
+        ui->listWidget->setStyleSheet("background-color:rgb(247,230,196);"
                                       "border:none;");
-        ui->textEditWrite->setStyleSheet("background-color:rgb(255,247,183);"
+        ui->textEditWrite->setStyleSheet("background-color:rgb(247,230,196);"
                                     "border:none;");
-        ui->widget->setStyleSheet("background-color:rgb(255,247,183)");
-        ui->widget_2->setStyleSheet("background-color:rgb(255,247,183)");
-        ui->widget_3->setStyleSheet("background-color:rgb(255,247,183)");
-        ui->listWidgetGroupNumbers->setStyleSheet("background-color:rgb(255,247,183);"
+        ui->widget->setStyleSheet("background-color:rgb(247,230,196);");
+        ui->widget_2->setStyleSheet("background-color:rgb(247,230,196);");
+        ui->widget_3->setStyleSheet("background-color:rgb(247,230,196);");
+        ui->listWidgetGroupNumbers->setStyleSheet("background-color:rgb(247,230,196);;"
                                                   "border:none;"
                                                   "font: 16pt \"Eras Demi ITC\";");
         ui->pushButton->setStyleSheet("QPushButton#pushButton{"
