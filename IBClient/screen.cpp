@@ -31,7 +31,6 @@ Screen::Screen(QWidget *parent)
     globalPath.lineTo(0, 0);
 
     oncePress = true;
-    //想到了添加一个bool labelimageShow()的函数的方法，找时间试一下
     labelimage=new QSLabel(this);
     Qt::WindowFlags nType = Qt::FramelessWindowHint | Qt::WindowStaysOnTopHint;
     labelimage->setWindowFlags(nType);
@@ -44,7 +43,7 @@ void Screen::paintEvent(QPaintEvent *e)//将上一个函数得到的全屏灰色
 {
     QPainter paint(this);
     paint.drawPixmap(0, 0, pixmap);
-    //初始化画笔操作
+    //初始化画布
     paint.setPen(Qt::blue);
     paint.setBrush(QColor(0, 0, 0, 100));
     //设置路径
@@ -57,8 +56,8 @@ void Screen::paintEvent(QPaintEvent *e)//将上一个函数得到的全屏灰色
     drawControlArea(paint);
 
 }
-//绘制正方形
-void Screen::drawControlArea(QPainter &painter)//已看懂
+//四角绘制正方形进行定位
+void Screen::drawControlArea(QPainter &painter)
 {
     //计算四个小正方形
     rect1.setX(movePoint.x() - 3);
@@ -78,7 +77,7 @@ void Screen::drawControlArea(QPainter &painter)//已看懂
     rect4.setWidth(6);
     rect4.setHeight(6);
     painter.save();
-    painter.setBrush(Qt::blue);
+    painter.setBrush(Qt::red);
     painter.drawRect(rect1);
     painter.drawRect(rect2);
     painter.drawRect(rect3);
@@ -128,11 +127,11 @@ qDebug() << "new ControlWidget";
         layout->setContentsMargins(0, 0, 0, 0);
         control->setObjectName("control");
         control->setStyleSheet("QWidget#control{\
-                               background-color: #eaecf0;}");
+                               background-color: #000000;}");
         controlUi->setScreenQuote(this);
     }
     //设置控制面板的位置
-    control->setGeometry(movePoint.x() - 543, movePoint.y() + 6, 543, 25);
+    control->setGeometry(movePoint.x() - 50, movePoint.y() + 6, 50, 25);
     control->show();
 }
 
