@@ -1,8 +1,3 @@
-# YourTalk-ChatRoom
-This is a simple chatroom-YourTalk. It's the final team project for BIT course _Foundamental Practice of Computer Science_.
+# Icebreaker IM software
 
-In order to get to know this project well, please read the doc _HighLevelDesign.docx_. 
-
-Also, we created a message type used in the communications between Server and Client, please find out more in the doc _CommunicationProtocol.xlsx_.
-
-Hope these docs and source codes can help you.
+Sartre once said that every individual is like an iceberg, where the surface represents their actions, while beneath it lies their desires, expectations, perspectives, feelings, and their true selves in life. These submerged aspects, not visible above the waterline, sometimes keep us apart. Icebreaker, our project, strives to harness the power of technology in the digital information era to break the icy barriers between people, fostering closer interconnectivity. Built upon Qt and C++, our project enables swift communication among multiple devices within a local network. We believe in the warmth of human nature, capable of melting the chilliness of destiny.
