@@ -326,6 +326,9 @@ background-color: rgb(183, 183, 183);
            <property name="text">
             <string>发送</string>
            </property>
+           <property name="shortcut">
+            <string>Return</string>
+           </property>
           </widget>
          </item>
         </layout>

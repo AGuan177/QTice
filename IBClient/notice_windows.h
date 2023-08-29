@@ -15,6 +15,7 @@ public:
     Notice_windows(Chat_windows * cw);
     ~Notice_windows();
     void setButtonText(QString);
+    void closeWindow();
 
 private slots:
     void on_pushButton_clicked();

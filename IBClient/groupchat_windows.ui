@@ -334,6 +334,9 @@ background-color: rgb(183, 183, 183);
            <property name="text">
             <string>发送</string>
            </property>
+           <property name="shortcut">
+            <string>Ctrl+S</string>
+           </property>
           </widget>
          </item>
          <item row="0" column="0">
