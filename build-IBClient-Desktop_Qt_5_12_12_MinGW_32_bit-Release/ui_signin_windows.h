@@ -98,8 +98,11 @@ public:
         pushButtonRegster->setObjectName(QString::fromUtf8("pushButtonRegster"));
         pushButtonRegster->setGeometry(QRect(30, 410, 91, 31));
         QFont font;
-        font.setFamily(QString::fromUtf8("\347\255\211\347\272\277"));
+        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font.setPointSize(10);
+        font.setBold(true);
         font.setUnderline(false);
+        font.setWeight(75);
         pushButtonRegster->setFont(font);
         pushButtonRegster->setStyleSheet(QString::fromUtf8("border:none;\n"
 "color: rgb(82, 82, 82);\n"
@@ -122,6 +125,8 @@ public:
         QFont font1;
         font1.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font1.setPointSize(12);
+        font1.setBold(true);
+        font1.setWeight(75);
         pushButtonLogin->setFont(font1);
         pushButtonLogin->setStyleSheet(QString::fromUtf8("background-color: rgb(46,46,46);\n"
 "color: rgb(255, 255, 255);\n"
@@ -150,6 +155,10 @@ public:
         sizePolicy.setHeightForWidth(lineEditUsername->sizePolicy().hasHeightForWidth());
         lineEditUsername->setSizePolicy(sizePolicy);
         lineEditUsername->setMinimumSize(QSize(350, 50));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font2.setPointSize(12);
+        lineEditUsername->setFont(font2);
         lineEditUsername->setStyleSheet(QString::fromUtf8(""));
 
         verticalLayout->addWidget(lineEditUsername);
@@ -159,6 +168,7 @@ public:
         sizePolicy.setHeightForWidth(lineEditPassword->sizePolicy().hasHeightForWidth());
         lineEditPassword->setSizePolicy(sizePolicy);
         lineEditPassword->setMinimumSize(QSize(350, 50));
+        lineEditPassword->setFont(font2);
         lineEditPassword->setStyleSheet(QString::fromUtf8(""));
         lineEditPassword->setFrame(true);
         lineEditPassword->setEchoMode(QLineEdit::Normal);
@@ -189,10 +199,10 @@ public:
         pushButtonLogin->setText(QApplication::translate("Signin_Windows", "\347\231\273 \345\275\225", nullptr));
         lineEditUsername->setInputMask(QString());
         lineEditUsername->setText(QString());
-        lineEditUsername->setPlaceholderText(QApplication::translate("Signin_Windows", "\350\264\246\345\217\267", nullptr));
+        lineEditUsername->setPlaceholderText(QApplication::translate("Signin_Windows", "  \350\264\246 \345\217\267", nullptr));
         lineEditPassword->setInputMask(QString());
         lineEditPassword->setText(QString());
-        lineEditPassword->setPlaceholderText(QApplication::translate("Signin_Windows", "\345\257\206\347\240\201", nullptr));
+        lineEditPassword->setPlaceholderText(QApplication::translate("Signin_Windows", "  \345\257\206 \347\240\201", nullptr));
     } // retranslateUi
 
 };

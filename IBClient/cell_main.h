@@ -65,6 +65,8 @@ signals:
     void sig_clickAdd();
     void sig_clickChange();
 
+private slots:
+
 };
 
 #endif // CELL_MAIN_H

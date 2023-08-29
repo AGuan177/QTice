@@ -208,7 +208,7 @@ background-color:transparent;
          <property name="font">
           <font>
            <family>微软雅黑</family>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="styleSheet">
@@ -236,7 +236,7 @@ background-color:transparent;
          <property name="font">
           <font>
            <family>微软雅黑</family>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="text">
@@ -267,7 +267,7 @@ background-color:transparent;
          <property name="font">
           <font>
            <family>微软雅黑</family>
-           <pointsize>10</pointsize>
+           <pointsize>12</pointsize>
           </font>
          </property>
          <property name="text">

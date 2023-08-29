@@ -41,15 +41,9 @@ Cell_Main::Cell_Main(QTcpSocket *tcpsocket) :
 
     QGridLayout *chat_layout = new QGridLayout;
 
-    //关闭内存释放检测
-//    connect(ui->shutdown, &QPushButton::clicked, this,[=](){
-
-//        &QWidget::close;
-//    });
-
-   connect(ui->shutdown, &QPushButton::clicked, this, &QWidget::close);
-
     //设计按钮功能
+
+    connect(ui->shutdown, &QPushButton::clicked, this, &QWidget::close);
     connect(ui->minimize, &QPushButton::clicked, this, &QWidget::showMinimized);
     connect(ui->maximize, &QPushButton::clicked, this, &Cell_Main::slot_maximize);
     connect(ui->add, &QPushButton::clicked, this, [=](){
@@ -231,9 +225,6 @@ void Cell_Main::SetCursorByRegoinIndex(BorderIndex region_index)
           break;
       }
 }
-
-
-
 
 
 

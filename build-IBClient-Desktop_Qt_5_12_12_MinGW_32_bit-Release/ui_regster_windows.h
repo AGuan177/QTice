@@ -75,6 +75,12 @@ public:
         pushButtonRegster->setSizePolicy(sizePolicy);
         pushButtonRegster->setMinimumSize(QSize(100, 40));
         pushButtonRegster->setMaximumSize(QSize(100, 40));
+        QFont font;
+        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font.setPointSize(12);
+        font.setBold(true);
+        font.setWeight(75);
+        pushButtonRegster->setFont(font);
         pushButtonRegster->setStyleSheet(QString::fromUtf8("background-color: rgb(46,46,46);\n"
 "color: rgb(255, 255, 255);\n"
 "border:none;"));
@@ -126,6 +132,10 @@ public:
         sizePolicy1.setHeightForWidth(lineEditUsername->sizePolicy().hasHeightForWidth());
         lineEditUsername->setSizePolicy(sizePolicy1);
         lineEditUsername->setMinimumSize(QSize(300, 40));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font1.setPointSize(12);
+        lineEditUsername->setFont(font1);
         lineEditUsername->setStyleSheet(QString::fromUtf8("border-bottom-color:black;"));
 
         verticalLayout->addWidget(lineEditUsername);
@@ -135,6 +145,7 @@ public:
         sizePolicy.setHeightForWidth(lineEditPassword->sizePolicy().hasHeightForWidth());
         lineEditPassword->setSizePolicy(sizePolicy);
         lineEditPassword->setMinimumSize(QSize(300, 40));
+        lineEditPassword->setFont(font1);
         lineEditPassword->setEchoMode(QLineEdit::Password);
 
         verticalLayout->addWidget(lineEditPassword);
@@ -144,6 +155,7 @@ public:
         sizePolicy.setHeightForWidth(lineEditPassword_2->sizePolicy().hasHeightForWidth());
         lineEditPassword_2->setSizePolicy(sizePolicy);
         lineEditPassword_2->setMinimumSize(QSize(300, 40));
+        lineEditPassword_2->setFont(font1);
         lineEditPassword_2->setEchoMode(QLineEdit::Password);
 
         verticalLayout->addWidget(lineEditPassword_2);
@@ -167,14 +179,14 @@ public:
     void retranslateUi(QWidget *Regster_Windows)
     {
         Regster_Windows->setWindowTitle(QApplication::translate("Regster_Windows", "Form", nullptr));
-        pushButtonRegster->setText(QApplication::translate("Regster_Windows", "\346\263\250\345\206\214", nullptr));
+        pushButtonRegster->setText(QApplication::translate("Regster_Windows", "\346\263\250 \345\206\214", nullptr));
         logo->setText(QString());
         label->setText(QApplication::translate("Regster_Windows", "IceBreaker", nullptr));
-        lineEditUsername->setPlaceholderText(QApplication::translate("Regster_Windows", "\350\264\246\345\217\267", nullptr));
+        lineEditUsername->setPlaceholderText(QApplication::translate("Regster_Windows", "  \350\264\246 \345\217\267", nullptr));
         lineEditPassword->setText(QString());
-        lineEditPassword->setPlaceholderText(QApplication::translate("Regster_Windows", "\345\257\206\347\240\201", nullptr));
+        lineEditPassword->setPlaceholderText(QApplication::translate("Regster_Windows", "  \345\257\206 \347\240\201", nullptr));
         lineEditPassword_2->setText(QString());
-        lineEditPassword_2->setPlaceholderText(QApplication::translate("Regster_Windows", "\347\241\256\350\256\244\345\257\206\347\240\201", nullptr));
+        lineEditPassword_2->setPlaceholderText(QApplication::translate("Regster_Windows", "  \347\241\256 \350\256\244 \345\257\206 \347\240\201", nullptr));
     } // retranslateUi
 
 };

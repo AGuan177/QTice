@@ -10,11 +10,13 @@ MyWidget::MyWidget(QWidget *parent)
 
      //建立通信
      m_tcpServer = new TcpServer();
+
      //选择监听的Ip和端口号
      m_tcpServer->listen(QHostAddress::Any, 8899);
 
+     addMessageToTextBrowser("ICEBREAKER服务器成功通信！");
+
      //从服务器接收客户端连接、断开连接信号并执行对应槽函数
-//     connect(m_tcpServer,SIGNAL(newConnection()),this,SLOT(slot_connect));
      connect(m_tcpServer,&TcpServer::sig_connect,this,&MyWidget::slot_connect);
      connect(m_tcpServer,SIGNAL(sig_disconnect(int)),this,SLOT(slot_disconnect(int)));
 
@@ -52,12 +54,41 @@ MyWidget::MyWidget(QWidget *parent)
      query.exec(cmd_4);
      QString cmd_5=QString("create table allmessage(sender varchar(255), receiver varchar(255),message varchar(255),time varchar(255) )");
      query.exec(cmd_5);
+
+     online_users_model = new QStringListModel(online_users);
+     updateUserList();
+     connect(&timer_online_users, &QTimer::timeout, this, &MyWidget::updateUserList);
+     timer_online_users.start(1000);
 }
 
 MyWidget::~MyWidget()
 {
     delete ui;
 }
+
+//更新用户列表，同时保持选定的索引
+void MyWidget::updateUserList(){
+    QModelIndex selectedIndex = ui->listView->currentIndex();
+    online_users.clear();
+    online_handles = m_socketMap.keys();
+    QSqlQuery query;
+    QString request;
+    QString handleList;
+    for(auto handle : online_handles){
+        handleList.append(QString::number(handle)).append(",");
+        request = "select id from onlineclient where handle = " + QString::number(handle) + ";";
+        query.exec(request);
+        if(query.next())
+            online_users.append(query.value(0).toString());
+    }
+    handleList.chop(1);
+    request = "delete from onlineclient where handle not in ("+handleList+");";
+    query.exec(request);
+    online_users_model->setStringList(online_users);
+    ui->listView->setModel(online_users_model);
+    ui->listView->setCurrentIndex(selectedIndex);
+}
+
 
 //客户端连接后执行槽函数slot_connect
 void MyWidget::slot_connect(int handle, QTcpSocket *socket)
@@ -192,10 +223,23 @@ void MyWidget::slot_readData(int handle, const QByteArray &data)
 
         //检查密码与用户名是否匹配
 
+
         /*
-         *  QString str_3 = QString("select * from regster where id = '"+str_1+"' and password = '"+str_2+"';");
-         *  当使用该语句的时候可以被SQL注入，简单语句为令user名字改为2' --
+         * 简单字符串拼接：会被SQL注入
+         * QString str_3 = QString("select * from regster where id = '"+str_1+"' and password = '"+str_2+"';");
+         * query.exec(str_3);
         */
+
+
+        /*
+         * 参数化查询：也会被SQL注入
+         * QString str_3 = QString("select * from regster where id = '%1' and password = '%2';").arg(str_1).arg(mypwd_sha256);
+         * query.exec(str_3);
+        */
+
+        /*
+         * 使用预处理语句，防止SQL注入
+         */
 
         query.prepare("select * from regster where id=:id and password=:password;");
         query.bindValue(":id", str_1);
@@ -485,8 +529,8 @@ bool MyWidget::IsOnline(QString id)
      QString str=QString("select * from onlineclient where id='%1'").arg(id);
      query.exec(str);
      //如果找到 则返回true 否则返回false
-     if(query.next()) return true;
-     else return false;
+     if(!query.next()) return false;
+     else return true;
 }
 
 //获取id号对应的handle号
@@ -553,3 +597,39 @@ QString MyWidget::getheadphotonumber(QString userid)
     query.next();
     return query.value(2).toString();
 }
+
+void MyWidget::on_download_log_clicked()
+{
+    QDateTime currentTime = QDateTime::currentDateTime();
+    QString logTime = currentTime.toString("yyyy-MM-dd");
+    QString log = logTime + "\n" + ui->textBrowser->toPlainText();
+    QSaveFile file(logTime + "-serverlog.txt");
+    if (file.open(QIODevice::WriteOnly)) {
+    QTextStream stream(&file);
+    stream << log;
+    file.commit(); // 保存文件
+    }
+    QDesktopServices::openUrl(file.fileName()); // 打开文件
+}
+
+
+void MyWidget::on_clear_log_clicked()
+{
+    ui->textBrowser->clear();
+}
+
+
+void MyWidget::on_kick_user_clicked()
+{
+    int kick_handle;
+    QString kick_user_id = ui->listView->currentIndex().data(Qt::DisplayRole).toString();
+    QString str = "#44#/" + kick_user_id +"/";
+    QSqlQuery query;
+    QString quest = "select handle from onlineclient where id = " + kick_user_id +";";
+    query.exec(quest);
+    if(query.next()){
+        kick_handle = query.value(0).toInt();
+        m_socketMap.value(kick_handle)->write(str.toUtf8().data());
+    }
+}
+

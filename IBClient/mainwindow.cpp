@@ -71,7 +71,8 @@ MainWindow::MainWindow(QWidget *parent)
 
                    //此时通知friend窗已经完成了操作
                 }
-                else if(str.startsWith("#00#")==true)
+                //#00#注册消息
+                else if(str.startsWith("#00#"))
                 {
                     char ch=str.at(4).unicode();
                     if(ch=='1')//代表注册成功
@@ -85,7 +86,8 @@ MainWindow::MainWindow(QWidget *parent)
                         w2->regterFailed();
                     }
                 }
-                else if(str.startsWith("#01#")==true)
+                //#01#登陆消息
+                else if(str.startsWith("#01#"))
                 {
 
                     QString str_1=str.section('$',0,0);//验证信息
@@ -186,20 +188,21 @@ MainWindow::MainWindow(QWidget *parent)
                         w1->LoginFailed(2);
                     }
                 }
-                else if(str.startsWith("#02#")==true)
+                //#02#收到消息通知
+                else if(str.startsWith("#02#"))
                 {
                     w3->wfriend->receiveMessage(str);
 
 
                 }
-                else if(str.startsWith("#14#")==true)
+                else if(str.startsWith("#14#"))
                 {
                     QString str_1=str.section('/',1,1);//申请者ID
                     QString str_2=str.section('/',2,2);//被邀请者ID
                     w3->wfriend->IsAccept(str_1);
 
                 }
-                else if(str.startsWith("#13#")==true)
+                else if(str.startsWith("#13#"))
                 {
                     QString str_1=str.section('/',1,1);//申请者ID
                     QString str_2=str.section('/',2,2);//被邀请者ID
@@ -211,7 +214,7 @@ MainWindow::MainWindow(QWidget *parent)
                     }
 
                 }
-                else if(str.startsWith("#21#")==true)
+                else if(str.startsWith("#21#"))
                 {
                     QString str_1=str.section('/',1,1);//申请者ID
                     QString str_2=str.section('/',2,2);//群名
@@ -268,7 +271,6 @@ MainWindow::MainWindow(QWidget *parent)
                     QString str_5=str.section('/',5,5);//发送者头像
                     w3->wfriend->addMessageToGroupWindows(str_1,str);
                 }
-
                 else if(str.startsWith("#31#"))
                 {
                     QString str_1=str.section('/',1,1);//发送者id
@@ -294,6 +296,12 @@ MainWindow::MainWindow(QWidget *parent)
                     {
                         qDebug()<<"只写模式启动成功";
                     }
+                }
+                //#44#强制下线信息
+                else if(str.startsWith("#44#")){
+                    w3->close();
+                    QMessageBox::information(this, "Shutdown", "您已被服务器强制下线！");
+
                 }
             }
             );

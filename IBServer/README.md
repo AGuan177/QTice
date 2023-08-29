@@ -1,0 +1,3 @@
+# Icebreaker IM software
+
+Sartre once said that every individual is like an iceberg, where the surface represents their actions, while beneath it lies their desires, expectations, perspectives, feelings, and their true selves in life. These submerged aspects, not visible above the waterline, sometimes keep us apart. Icebreaker, our project, strives to harness the power of technology in the digital information era to break the icy barriers between people, fostering closer interconnectivity. Built upon Qt and C++, our project enables swift communication among multiple devices within a local network. We believe in the warmth of human nature, capable of melting the chilliness of destiny.

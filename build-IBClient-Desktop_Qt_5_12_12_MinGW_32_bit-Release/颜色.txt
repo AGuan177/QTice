@@ -1,0 +1,26 @@
+左边侧边栏：最深色
+头像，中间色
+聊天框头部：中间色
+朋友群聊:最浅色
+文本框：最浅色
+文件
+
+QPushButton {border-radius: 40px; 
+             background-color: #B8F1CC;
+             color: white;
+             padding: 10px;}
+QPushButton:pressed {
+             background-color: #51A8DD;
+             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);}
+
+QString icebreak = "#A5DEE4#51A8DD#2EA9DF";
+    QString macaroon= "#B8F1ED#B8F1CC#F1F1B8";
+    QString morandi= "#B5C4B1#C1CBD7#C9C0D3";
+
+    QString red = "#F8C3CD#E16B8C#B5495B";
+    QString yellow = "#FAD689#F6C555#EFBB24";
+    QString green = "#A8D8B9#86C166#5DAC81";
+
+    QString pink = "#FFE5CA#F4C6CD#BC233E";
+    QString orange ="#F7E6C4#F4DC7B#B08A17";
+    QString purple = "#B28FCE#986DB2#77428D";
