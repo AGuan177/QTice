@@ -12,7 +12,7 @@ Notice_windows::Notice_windows(Chat_windows * cw) :
     // 连接定时器的超时信号到关闭窗口的槽函数
     connect(timer, &QTimer::timeout, this, &Notice_windows::closeWindow);
     // 启动定时器，设置超时时间为几秒
-    timer->start(1000);
+    timer->start(500);
 }
 
 Notice_windows::~Notice_windows()

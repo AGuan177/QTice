@@ -137,7 +137,10 @@ background:transparent;
     </property>
     <property name="font">
      <font>
-      <family>等线</family>
+      <family>微软雅黑</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
       <underline>false</underline>
      </font>
     </property>
@@ -191,6 +194,8 @@ background:rgb(245,245,245);</string>
         <font>
          <family>微软雅黑</family>
          <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="styleSheet">
@@ -257,6 +262,12 @@ border-radiux: 505px</string>
            <height>50</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -267,7 +278,7 @@ border-radiux: 505px</string>
           <string/>
          </property>
          <property name="placeholderText">
-          <string>账号</string>
+          <string>  账 号</string>
          </property>
         </widget>
        </item>
@@ -285,6 +296,12 @@ border-radiux: 505px</string>
            <height>50</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true"/>
          </property>
@@ -301,7 +318,7 @@ border-radiux: 505px</string>
           <enum>QLineEdit::Normal</enum>
          </property>
          <property name="placeholderText">
-          <string>密码</string>
+          <string>  密 码</string>
          </property>
         </widget>
        </item>

@@ -196,11 +196,12 @@ void MyWidget::slot_readData(int handle, const QByteArray &data)
          *  QString str_3 = QString("select * from regster where id = '"+str_1+"' and password = '"+str_2+"';");
          *  当使用该语句的时候可以被SQL注入，简单语句为令user名字改为2' --
         */
-        QString str_3=QString("select * from regster where id='%1' and password='%2'").arg(str_1).arg(mypwd_sha256);
 
+        query.prepare("select * from regster where id=:id and password=:password;");
+        query.bindValue(":id", str_1);
+        query.bindValue(":password", mypwd_sha256);
 
-
-        query.exec(str_3);
+        query.exec();
 
         //不匹配
         if(query.next()==false)

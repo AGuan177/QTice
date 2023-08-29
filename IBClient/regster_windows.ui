@@ -67,13 +67,21 @@ QLineEdit{
         <height>40</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(46,46,46);
 color: rgb(255, 255, 255);
 border:none;</string>
       </property>
       <property name="text">
-       <string>注册</string>
+       <string>注 册</string>
       </property>
      </widget>
     </item>
@@ -197,11 +205,17 @@ background-color:transparent;
            <height>40</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">border-bottom-color:black;</string>
          </property>
          <property name="placeholderText">
-          <string>账号</string>
+          <string>  账 号</string>
          </property>
         </widget>
        </item>
@@ -219,6 +233,12 @@ background-color:transparent;
            <height>40</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -226,7 +246,7 @@ background-color:transparent;
           <enum>QLineEdit::Password</enum>
          </property>
          <property name="placeholderText">
-          <string>密码</string>
+          <string>  密 码</string>
          </property>
         </widget>
        </item>
@@ -244,6 +264,12 @@ background-color:transparent;
            <height>40</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑</family>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string/>
          </property>
@@ -251,7 +277,7 @@ background-color:transparent;
           <enum>QLineEdit::Password</enum>
          </property>
          <property name="placeholderText">
-          <string>确认密码</string>
+          <string>  确 认 密 码</string>
          </property>
         </widget>
        </item>

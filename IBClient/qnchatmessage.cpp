@@ -12,7 +12,7 @@
 QNChatMessage::QNChatMessage(QWidget *parent) : QWidget(parent)
 {
     QFont te_font = this->font();
-    te_font.setFamily("MicrosoftYaHei");
+    te_font.setFamily("微软雅黑");
     te_font.setPointSize(12);
     this->setFont(te_font);
     m_leftPixmap = QPixmap(":/img/Customer Copy.png");
