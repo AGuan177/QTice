@@ -298,7 +298,7 @@ border-radiux: 505px</string>
           <bool>true</bool>
          </property>
          <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+          <enum>QLineEdit::Normal</enum>
          </property>
          <property name="placeholderText">
           <string>密码</string>

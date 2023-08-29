@@ -126,36 +126,7 @@ Cell_Main::Cell_Main(QTcpSocket *tcpsocket) :
 
 void Cell_Main::ChangeColor(QString color)
 {
-    /*
-    if(color == "blue")
-    {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(190,173,250)}");
-        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(233,204,251);}");
-        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(233,204,251);}");
-        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(208,191,255);}");
-    }
-    if(color == "yellow")
-    {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(248,157,3)}");
-        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(255, 243, 226);}");
-        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(255, 243, 226);}");
-        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(255, 229, 202);}");
-    }
-    if(color == "red")
-    {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(250, 152, 132);}");
-        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(255, 243, 226);}");
-        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(255, 243, 226);}");
-        ui->main_widget->setStyleSheet("QWidget#main_widget{background-color: rgb(255, 229, 202);}");
-    }
-    if(color == "black")
-    {
-        ui->side_bar->setStyleSheet("QWidget#side_bar{background-color: rgb(100,100,100)}");
-        ui->name_tag->setStyleSheet("QWidget#name_tag{background-color: rgb(245,245,245);}");
-        ui->friend_2->setStyleSheet("QWidget#friend_2{background-color: rgb(245,245,245);}");
-        ui->main_widget->setStyleSheet("");
-    }
-    */
+
     QString color_light = color.mid(0,7);
     QString color_medium = color.mid(7, 7);
     QString color_hard = color.mid(14,7);

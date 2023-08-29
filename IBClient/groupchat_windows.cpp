@@ -23,94 +23,28 @@ Groupchat_windows::~Groupchat_windows()
 //变换颜色
 void Groupchat_windows::ChangeColor(QString color)
 {
-    if(color == "blue")
-    {
-        ui->listWidget->setStyleSheet("background-color:rgb(231,230,249);"
-                                      "border:none;");
-        ui->textEditWrite->setStyleSheet("background-color:rgb(231,230,249);"
-                                    "border:none;");
-        ui->widget->setStyleSheet("background-color:rgb(231,230,249)");
-        ui->widget_2->setStyleSheet("background-color:rgb(231,230,249)");
-        ui->widget_3->setStyleSheet("background-color:rgb(231,230,249)");
-        ui->listWidgetGroupNumbers->setStyleSheet("background-color:rgb(231,230,249);"
-                                                  "border:none;"
-                                                  "font: 16pt \"Eras Demi ITC\";");
-        ui->pushButton->setStyleSheet("QPushButton#pushButton{"
-                                "font: 11pt \"幼圆\";"
-                                "color:rgb(54,46,205);"
-                                "background-color: rgb(202,200,242);"
+
+    QString color_light = color.mid(0, 7);
+    QString color_medium = color.mid(7, 7);
+    QString color_hard = color.mid(14, 7);
+    ui->listWidget->setStyleSheet("background-color:"+color_light+";""border:none;");
+    ui->textEditWrite->setStyleSheet("background-color:"+color_light+";""border:none;");
+    ui->widget->setStyleSheet("background-color:"+color_light+";");
+    ui->widget_2->setStyleSheet("background-color:"+color_light+";");
+    ui->widget_3->setStyleSheet("background-color:"+color_light+";");
+    ui->listWidgetGroupNumbers->setStyleSheet("background-color:"+color_light+";"
+                                              "border:none;"
+                                              "font: 16pt \"Eras Demi ITC\";");
+    ui->pushButton->setStyleSheet("QPushButton#pushButton{"
+                                "font: 12pt \"微软雅黑\";"
+                                "color:#000000;"
+                                "background-color: "+color_medium+";"+
                                 "border:none;"
                                 "}"
-                                "QPushButton#pushButton:hover{"
-                                "background-color: rgb(183, 183, 183);"
+                                "QPushButton#Send:hover{"
+                                "background-color: "+color_hard+";"+
+                                "color:#000000;"
                                 "}");
-    }
-    if(color == "red")
-    {
-        ui->listWidget->setStyleSheet("background-color:rgb(255, 229, 202);"
-                                      "border:none;");
-        ui->textEditWrite->setStyleSheet("background-color:rgb(255, 229, 202);"
-                                    "border:none;");
-        ui->widget->setStyleSheet("background-color:rgb(255, 229, 202)");
-        ui->widget_2->setStyleSheet("background-color:rgb(255, 229, 202)");
-        ui->widget_3->setStyleSheet("background-color:rgb(255, 229, 202)");
-        ui->listWidgetGroupNumbers->setStyleSheet("background-color:rgb(255, 229, 202);"
-                                                  "border:none;"
-                                                  "font: 16pt \"Eras Demi ITC\";");
-        ui->pushButton->setStyleSheet("QPushButton#pushButton{"
-                                "font: 11pt \"幼圆\";"
-                                "color:rgb(188,35,62);"
-                                "background-color: rgb(244,198,205);"
-                                "border:none;"
-                                "}"
-                                "QPushButton#pushButton:hover{"
-                                "background-color: rgb(183, 183, 183);"
-                                "}");
-    }
-    if(color == "yellow")
-    {
-        ui->listWidget->setStyleSheet("background-color:rgb(247,230,196);"
-                                      "border:none;");
-        ui->textEditWrite->setStyleSheet("background-color:rgb(247,230,196);"
-                                    "border:none;");
-        ui->widget->setStyleSheet("background-color:rgb(247,230,196);");
-        ui->widget_2->setStyleSheet("background-color:rgb(247,230,196);");
-        ui->widget_3->setStyleSheet("background-color:rgb(247,230,196);");
-        ui->listWidgetGroupNumbers->setStyleSheet("background-color:rgb(247,230,196);;"
-                                                  "border:none;"
-                                                  "font: 16pt \"Eras Demi ITC\";");
-        ui->pushButton->setStyleSheet("QPushButton#pushButton{"
-                                "font: 11pt \"幼圆\";"
-                                "color:rgb(176,138,23);"
-                                "background-color: rgb(244,220,123);"
-                                "border:none;"
-                                "}"
-                                "QPushButton#pushButton:hover{"
-                                "background-color: rgb(183, 183, 183);"
-                                "}");
-    }
-    if(color == "black")
-    {
-        ui->listWidget->setStyleSheet("background-color:rgb(245,245,245);"
-                                      "border:none;");
-        ui->textEditWrite->setStyleSheet("background-color:rgb(245,245,245);"
-                                    "border:none;");
-        ui->widget->setStyleSheet("background-color:rgb(245,245,245)");
-        ui->widget_2->setStyleSheet("background-color:rgb(245,245,245)");
-        ui->widget_3->setStyleSheet("background-color:rgb(245,245,245)");
-        ui->listWidgetGroupNumbers->setStyleSheet("background-color:rgb(245,245,245);"
-                                                  "border:none;"
-                                                  "font: 16pt \"Eras Demi ITC\";");
-        ui->pushButton->setStyleSheet("QPushButton#pushButton{"
-                                "font: 11pt \"幼圆\";"
-                                "color:rgb(40,199,123);"
-                                "background-color: rgb(233,233,233);"
-                                "border:none;"
-                                "}"
-                                "QPushButton#pushButton:hover{"
-                                "background-color: rgb(183, 183, 183);"
-                                "}");
-    }
 }
 
 void Groupchat_windows::set3LineEidt(QString groupname,QString managername,QString yourid)

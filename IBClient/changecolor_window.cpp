@@ -16,8 +16,6 @@ ChangeColor_Window::~ChangeColor_Window()
     delete ui;
 }
 
-
-
 void ChangeColor_Window::on_icebreak_clicked()
 {
     emit sig_color(ChangeColor_Window::icebreak);
@@ -59,15 +57,26 @@ void ChangeColor_Window::on_pink_clicked()
     emit sig_color(ChangeColor_Window::pink);
 }
 
-
 void ChangeColor_Window::on_orange_clicked()
 {
     emit sig_color(ChangeColor_Window::orange);
 }
 
-
 void ChangeColor_Window::on_purple_clicked()
 {
     emit sig_color(ChangeColor_Window::purple);
+}
+
+void ChangeColor_Window::on_pushButton_clicked()
+{
+    QString str = "";
+    str +="#";
+    str+=ui->lineEdit->text();
+    str +="#";
+    str+=ui->lineEdit_2->text();
+    str +="#";
+    str+=ui->lineEdit_3->text();
+    emit sig_color(str);
+
 }
 

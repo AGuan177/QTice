@@ -144,12 +144,14 @@ void MyWidget::slot_readData(int handle, const QByteArray &data)
     {
         QString myid = str.section('/', 1, 1);//获得id号
         QString mypwd = str.section('/', 2, 2);//获得密码
-        QByteArray mypwd_QBA = mypwd.toUtf8();//密码转为QByteArray格式
-        QByteArray mypwd_hash = QCryptographicHash::hash(mypwd_QBA, QCryptographicHash::Md5);//密码加密
-        QString mypwd_md5 = mypwd_hash.toHex();//加密后的密码转回QString格式
 
-        //将信息插入regster表格
-        QString str_1=QString("insert into regster(id,password,headphotonumber) values('%1','%2','1')").arg(myid).arg(mypwd_md5);
+        QByteArray mypwd_QBA = mypwd.toUtf8();//密码转为QByteArray格式
+        QByteArray mypwd_hash = QCryptographicHash::hash(mypwd_QBA, QCryptographicHash::Sha256);//密码加密
+        QString mypwd_sha256 = mypwd_hash.toHex();//加密后的密码转回QString格式
+
+        QString str_1 = QString("insert into regster(id,password,headphotonumber) values('%1','%2','1')").arg(myid).arg(mypwd_sha256);
+
+
         //插入失败
         if(query.exec(str_1)==false){
             //返回注册失败信息
@@ -169,12 +171,15 @@ void MyWidget::slot_readData(int handle, const QByteArray &data)
     {
         QString str_1=str.section('/',1,1);//用户名
         QString str_2=str.section('/',2,2);//密码
+
+
         QByteArray mypwd_QBA = str_2.toUtf8();//密码转为QByteArray格式
-        QByteArray mypwd_hash = QCryptographicHash::hash(mypwd_QBA, QCryptographicHash::Md5);//密码加密
-        QString mypwd_md5 = mypwd_hash.toHex();//加密后转为QString格式
+        QByteArray mypwd_hash = QCryptographicHash::hash(mypwd_QBA, QCryptographicHash::Sha256);//密码加密
+        QString mypwd_sha256 = mypwd_hash.toHex();//加密后转为QString格式
 
         //检查onlineclient表id号是否已登录
         QString cmd_2=QString("select * from onlineclient where id='%1'").arg(str_1);
+
         query.exec(cmd_2);
         //已经登陆
         if(query.next()==true)
@@ -186,8 +191,17 @@ void MyWidget::slot_readData(int handle, const QByteArray &data)
         }
 
         //检查密码与用户名是否匹配
-        QString str_3=QString("select * from regster where id='%1' and password='%2'").arg(str_1).arg(mypwd_md5);
+
+        /*
+         *  QString str_3 = QString("select * from regster where id = '"+str_1+"' and password = '"+str_2+"';");
+         *  当使用该语句的时候可以被SQL注入，简单语句为令user名字改为2' --
+        */
+        QString str_3=QString("select * from regster where id='%1' and password='%2'").arg(str_1).arg(mypwd_sha256);
+
+
+
         query.exec(str_3);
+
         //不匹配
         if(query.next()==false)
         {

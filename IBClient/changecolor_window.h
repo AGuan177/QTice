@@ -42,6 +42,8 @@ private slots:
     void on_orange_clicked();
     void on_purple_clicked();
 
+    void on_pushButton_clicked();
+
 signals:
     void sig_color(QString color);
 };
