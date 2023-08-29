@@ -36,5 +36,10 @@
         <file>img/title5.png</file>
         <file>img/exp7.png</file>
         <file>img/exp8.png</file>
+        <file>img/ball.svg</file>
+        <file>img/berry.svg</file>
+        <file>img/chrismastree.svg</file>
+        <file>img/group.svg</file>
+        <file>img/ring.svg</file>
     </qresource>
 </RCC>
