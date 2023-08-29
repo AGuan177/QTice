@@ -64,6 +64,26 @@ background-color: rgb(227,224,223);
       <property name="spacing">
        <number>1</number>
       </property>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QWidget" name="friend_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <zorder>side_bar</zorder>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QWidget" name="chat" native="true"/>
+      </item>
       <item row="0" column="2">
        <widget class="QWidget" name="name_tag" native="true">
         <property name="minimumSize">
@@ -266,26 +286,6 @@ border:none;
         </layout>
        </widget>
       </item>
-      <item row="0" column="1" rowspan="2">
-       <widget class="QWidget" name="friend_2" native="true">
-        <property name="minimumSize">
-         <size>
-          <width>300</width>
-          <height>0</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>300</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <zorder>side_bar</zorder>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <widget class="QWidget" name="chat" native="true"/>
-      </item>
       <item row="0" column="0" rowspan="2">
        <widget class="QWidget" name="side_bar" native="true">
         <property name="minimumSize">
@@ -323,7 +323,7 @@ border:none;
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>220</y>
+           <y>100</y>
            <width>55</width>
            <height>55</height>
           </rect>
@@ -355,7 +355,7 @@ background-color: rgb(79, 79, 79);
          <property name="geometry">
           <rect>
            <x>10</x>
-           <y>470</y>
+           <y>170</y>
            <width>55</width>
            <height>55</height>
           </rect>
@@ -378,6 +378,38 @@ QPushButton#change_color:hover{
 border:none;
 background-color: rgb(79, 79, 79);
 }</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>630</y>
+           <width>51</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/new/prefix1/img/chrismastree.svg);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>230</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/new/prefix1/img/exp9.png);</string>
          </property>
          <property name="text">
           <string/>

@@ -41,5 +41,7 @@
         <file>img/chrismastree.svg</file>
         <file>img/group.svg</file>
         <file>img/ring.svg</file>
+        <file>img/exp9.png</file>
+        <file>img/exp10.png</file>
     </qresource>
 </RCC>
