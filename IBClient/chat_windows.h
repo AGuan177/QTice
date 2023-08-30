@@ -48,6 +48,7 @@ public:
     void change_photo(QString path);
     void send_photo(QString message);
     void reciting_poetry();
+    int index = 0;
 
     int headphotonumber;
     QString returnPhotoPath(int i);

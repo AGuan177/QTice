@@ -626,7 +626,8 @@ void Chat_windows::reciting_poetry(){
     QTimer *timer = new QTimer(this);
     connect(timer, &QTimer::timeout, [=]() {
 
-        QString message = poetry::getRandomPoetry();
+        QString message = poetry::getRandomPoetry(index);
+        index = (index+1)%poetry::getPoetryNumber();
         QString nowtime=(QDateTime::currentDateTime()).toString("yyyy-MM-dd hh:mm::ss");
 
         // 发信
@@ -636,7 +637,8 @@ void Chat_windows::reciting_poetry(){
 
         // 回信
         QTimer::singleShot(200, [=]() {
-            QString replyMessage = poetry::getRandomPoetry();
+            QString replyMessage = poetry::getRandomPoetry(index);
+            index = (index+1)%poetry::getPoetryNumber();
             QString replyNowTime = QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss");
             QString replyStr = "#02#/""3""/""3""/" + replyMessage + "/" + replyNowTime;
             tcpSocket->write(replyStr.toUtf8());

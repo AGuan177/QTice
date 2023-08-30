@@ -67,17 +67,17 @@ QSize QNChatMessage::fontRect(QString str, int a)//计算绘图所需坐标
     QSize size = getRealString(m_msg); // 整个的size;
     flag = 0;
     qDebug()<< a;
-    if(a==1)
+    if(a==1) //文本
     {
         size = QSize(450,120);
         flag = 1;
     }
-    else if(a==2)
+    else if(a==2) //图片
     {
-        size = QSize(500,250);//500,250
+        size = QSize(500,250);
         flag = 2;
     }
-    else if(a==3)
+    else if(a==3) // 表情包
     {
         size = QSize(190,63);
         flag = 3;

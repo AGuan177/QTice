@@ -3,14 +3,15 @@
 
 #include <QString>
 #include <QStringList>
-#include <QTime>
-#include <QRandomGenerator>
+
+//#include <QRandomGenerator>
 
 class poetry
 {
 public:
     poetry();
-    static QString getRandomPoetry();
+    static QString getRandomPoetry(int index);
+    static int getPoetryNumber();
     static const QStringList poetries;
 };
 

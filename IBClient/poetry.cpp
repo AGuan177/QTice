@@ -8,7 +8,7 @@ poetry::poetry()
 
 const QStringList poetry::poetries={
     "To be or not to be, that is the question.",
-    "Two roads diverged in a wood, and I— / I took the one less traveled by.",
+    "Two roads diverged in a wood, and I / I took the one less traveled by.",
     "I wandered lonely as a cloud / That floats on high o'er vales and hills.",
     "Hope is the thing with feathers / That perches in the soul." ,
     "Do not go gentle into that good night, / Old age should burn and rave at close of day.",
@@ -48,8 +48,12 @@ const QStringList poetry::poetries={
     "If music be the food of love, play on.",
     "Parting is such sweet sorrow.",
 };
-QString poetry::getRandomPoetry(){
+QString poetry::getRandomPoetry(int index){
 
-    int randomIndex = QRandomGenerator::global()->bounded(poetries.size());
-    return poetries.at(randomIndex);
+    //int randomIndex = QRandomGenerator::global()->bounded(poetries.size());
+    //return poetries.at(randomIndex);
+    return poetries.at(index);
+}
+int poetry::getPoetryNumber(){
+    return poetries.count();
 }
