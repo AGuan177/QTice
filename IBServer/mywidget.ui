@@ -17,13 +17,13 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color:&quot;#ffffff&quot;;</string>
+   <string notr="true">background-color:#F8C3CD</string>
   </property>
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>60</y>
+     <x>70</x>
+     <y>50</y>
      <width>651</width>
      <height>401</height>
     </rect>
@@ -54,6 +54,9 @@
         <family>微软雅黑</family>
         <pointsize>11</pointsize>
        </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#FEDFE1 </string>
       </property>
      </widget>
     </item>
@@ -110,6 +113,9 @@
         <pointsize>11</pointsize>
        </font>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#FEDFE1 </string>
+      </property>
      </widget>
     </item>
     <item row="1" column="0">
@@ -135,8 +141,8 @@
   <widget class="QPushButton" name="download_log">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>490</y>
+     <x>70</x>
+     <y>480</y>
      <width>161</width>
      <height>51</height>
     </rect>
@@ -156,8 +162,8 @@
   <widget class="QPushButton" name="clear_log">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>490</y>
+     <x>310</x>
+     <y>480</y>
      <width>161</width>
      <height>51</height>
     </rect>
@@ -177,8 +183,8 @@
   <widget class="QPushButton" name="kick_user">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>490</y>
+     <x>560</x>
+     <y>480</y>
      <width>161</width>
      <height>51</height>
     </rect>
