@@ -64,9 +64,11 @@ private:
 signals:
     void sig_clickAdd();
     void sig_clickChange();
+    void sig_poetry();
 
 private slots:
 
+    void on_options_clicked();
 };
 
 #endif // CELL_MAIN_H

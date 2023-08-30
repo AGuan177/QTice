@@ -17,6 +17,7 @@
 #include "screen.h"
 #include "controlwidget.h"
 #include"myrect.h"
+#include "chat_windows.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -41,6 +42,7 @@ private:
     Cell_Main * w3;//好友窗口
     add_friend *w4;  //添加好友窗口
     ChangeColor_Window *w5;     //改变主题颜色界面
+    Chat_windows *w6;
     bool istransporting;//是否在传输文件
     QFile *file;//文件
     QString filename;//文件名

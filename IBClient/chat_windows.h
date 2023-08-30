@@ -45,6 +45,7 @@ public:
     void addMessageToTextEdit_headphoto(QString filename,QNChatMessage::User_Type type,int leftphoto=1,int rightphoto=1);
     void change_photo(QString path);
     void send_photo(QString message);
+    void reciting_poetry();
 
     int headphotonumber;
     QString returnPhotoPath(int i);

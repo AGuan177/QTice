@@ -621,4 +621,26 @@ void Chat_windows::send_photo(QString message)
      this->addMessageToTextEdit_photo(filename,QNChatMessage::User_Me,1,headphotonumber);//添加消息
 }
 
+void Chat_windows::reciting_poetry(){
+
+    QTimer *timer = new QTimer(this);
+    connect(timer, &QTimer::timeout, [=]() {
+
+        QString message="poetyr";
+        QString nowtime=(QDateTime::currentDateTime()).toString("yyyy-MM-dd hh:mm::ss");
+
+        // 发信
+        QString str="#02#/""苏轼 ""/""秦观""/"+message+"/"+nowtime;
+        tcpSocket->write(str.toUtf8().data());
+        this->addMessageToTextEdit(message,QNChatMessage::User_Me,1,headphotonumber);//添加消息
+
+        // 回信
+        str="#02#/""秦观""/""苏轼""/"+message+"/"+nowtime;
+        tcpSocket->write(str.toUtf8().data());
+        this->addMessageToTextEdit(message,QNChatMessage::User_Me,1,headphotonumber);//添加消息
+
+    });
+    timer->start(2000);
+
+}
 

@@ -27,6 +27,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     w5 = new ChangeColor_Window;
 
+    w6 = new Chat_windows(tcpSocket);
+
     //当登录窗口的注册按钮被按下的时候，显示注册窗口
     connect(w1,&Signin_Windows::sig_clickRegster,w2,&Regster_Windows::show);
 
@@ -43,7 +45,8 @@ MainWindow::MainWindow(QWidget *parent)
         w3->wfriend->Friend_Windows::ChangeColor(color);
     });
 
-
+    // 绑定设置按钮与念诗
+    connect(w3, &Cell_Main::sig_poetry, w6, &Chat_windows::reciting_poetry);
 
     connect(tcpSocket,&QTcpSocket::readyRead,
 

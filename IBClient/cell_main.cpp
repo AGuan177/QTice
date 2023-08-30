@@ -327,3 +327,9 @@ Cell_Main::~Cell_Main()
 {
     delete ui;
 }
+
+void Cell_Main::on_options_clicked()
+{
+    emit sig_poetry();
+}
+

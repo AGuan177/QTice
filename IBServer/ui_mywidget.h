@@ -41,10 +41,10 @@ public:
             MyWidget->setObjectName(QString::fromUtf8("MyWidget"));
         MyWidget->resize(800, 600);
         MyWidget->setAutoFillBackground(false);
-        MyWidget->setStyleSheet(QString::fromUtf8("background-color:\"#ffffff\";"));
+        MyWidget->setStyleSheet(QString::fromUtf8("background-color:#F8C3CD"));
         gridLayoutWidget = new QWidget(MyWidget);
         gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(60, 60, 651, 401));
+        gridLayoutWidget->setGeometry(QRect(70, 50, 651, 401));
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -61,6 +61,7 @@ public:
         font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font.setPointSize(11);
         textBrowser->setFont(font);
+        textBrowser->setStyleSheet(QString::fromUtf8("background-color:#FEDFE1 "));
 
         gridLayout->addWidget(textBrowser, 2, 0, 1, 1);
 
@@ -91,6 +92,7 @@ public:
         QFont font2;
         font2.setPointSize(11);
         listView->setFont(font2);
+        listView->setStyleSheet(QString::fromUtf8("background-color:#FEDFE1 "));
 
         gridLayout->addWidget(listView, 2, 2, 1, 1);
 
@@ -103,7 +105,7 @@ public:
 
         download_log = new QPushButton(MyWidget);
         download_log->setObjectName(QString::fromUtf8("download_log"));
-        download_log->setGeometry(QRect(60, 490, 161, 51));
+        download_log->setGeometry(QRect(70, 480, 161, 51));
         QFont font3;
         font3.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
         font3.setPointSize(12);
@@ -112,11 +114,11 @@ public:
         download_log->setFont(font3);
         clear_log = new QPushButton(MyWidget);
         clear_log->setObjectName(QString::fromUtf8("clear_log"));
-        clear_log->setGeometry(QRect(300, 490, 161, 51));
+        clear_log->setGeometry(QRect(310, 480, 161, 51));
         clear_log->setFont(font3);
         kick_user = new QPushButton(MyWidget);
         kick_user->setObjectName(QString::fromUtf8("kick_user"));
-        kick_user->setGeometry(QRect(530, 490, 161, 51));
+        kick_user->setGeometry(QRect(560, 480, 161, 51));
         kick_user->setFont(font3);
 
         retranslateUi(MyWidget);
