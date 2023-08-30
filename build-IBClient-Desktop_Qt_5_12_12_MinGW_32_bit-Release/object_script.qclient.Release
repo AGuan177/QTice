@@ -1,5 +1,6 @@
 release/main.o
 release/cell_main.o
+release/poetry.o
 release/qnchatmessage.o
 release/chat_windows.o
 release/friend_windows.o

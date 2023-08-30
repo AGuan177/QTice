@@ -1,5 +1,6 @@
 debug/main.o
 debug/cell_main.o
+debug/poetry.o
 debug/qnchatmessage.o
 debug/chat_windows.o
 debug/friend_windows.o

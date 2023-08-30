@@ -68,6 +68,8 @@ MainWindow::MainWindow(QWidget *parent)
                         qDebug()<<"传完了";
                         w3->wfriend->dealproject(this->sender);
                         file->close();
+                        //file->open(QIODevice::ReadOnly);
+                        //QDesktopServices::openUrl(file->fileName());
                         istransporting=false;
                         delete file;
                     }
@@ -295,10 +297,9 @@ MainWindow::MainWindow(QWidget *parent)
 
                     //启动文件
                     file->setFileName(filename);
-                    if(file->open(QIODevice::WriteOnly))
-                    {
-                        qDebug()<<"只写模式启动成功";
-                    }
+                    qDebug()<<"yzl:"<<file;
+                    //QDesktopServices::openUrl(file->fileName());
+
                 }
                 //#44#强制下线信息
                 else if(str.startsWith("#44#")){

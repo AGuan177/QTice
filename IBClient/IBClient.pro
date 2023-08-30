@@ -25,6 +25,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         cell_main.cpp \
+    poetry.cpp \
     qnchatmessage.cpp \
     chat_windows.cpp \
     friend_windows.cpp \
@@ -43,6 +44,7 @@ SOURCES += main.cpp\
     qslabel.cpp
 
 HEADERS  += cell_main.h \
+    poetry.h \
     qnchatmessage.h \
     chat_windows.h \
     friend_windows.h \

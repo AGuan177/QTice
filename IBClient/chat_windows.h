@@ -13,6 +13,8 @@
 #include<QShortcut>
 #include<expression.h>
 #include"screen.h"
+#include"poetry.h"
+#include <QDesktopServices>
 
 
 namespace Ui {
